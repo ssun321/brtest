@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-#import "ViewController.h"
+#import "RootViewController.h"
 
 @implementation AppDelegate
 
@@ -23,8 +23,14 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
-    self.window.rootViewController = self.viewController;
+
+    self.viewController = [[RootViewController alloc] initWithNibName:@"RootViewController" bundle:nil];
+    
+    UINavigationController* navigationController = [[UINavigationController alloc] initWithRootViewController:self.viewController];
+    
+    navigationController.navigationBarHidden = YES;
+    
+    self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
     return YES;
 }

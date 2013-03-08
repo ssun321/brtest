@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  RootViewController.h
 //  BrainHealth
 //
 //  Created by Tim on 13. 2. 20..
@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface RootViewController : UIViewController
+- (IBAction)clickNext:(id)sender;
 
 @end
