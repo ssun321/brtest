@@ -7,7 +7,7 @@
 //
 
 #import "RootViewController.h"
-#import "MenuViewController.h"
+#import "LoginViewController.h"
 
 @interface RootViewController ()
 
@@ -37,7 +37,7 @@
 }
 
 - (IBAction)clickNext:(id)sender {
-    MenuViewController* vc = [[MenuViewController alloc] initWithNibName:@"MenuViewController" bundle:nil];
+    LoginViewController* vc = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
     [self.navigationController pushViewController:vc animated:YES];
     [vc release];
 }
