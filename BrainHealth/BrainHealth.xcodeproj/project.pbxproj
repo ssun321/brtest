@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22965A7C16F1E5D40098F64A /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22965A7A16F1E5D40098F64A /* InfoViewController.m */; };
+		22965A7D16F1E5D40098F64A /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22965A7B16F1E5D40098F64A /* InfoViewController.xib */; };
 		22C41DBB16D4B2F900B4D937 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C41DBA16D4B2F900B4D937 /* UIKit.framework */; };
 		22C41DBD16D4B2F900B4D937 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C41DBC16D4B2F900B4D937 /* Foundation.framework */; };
 		22C41DBF16D4B2F900B4D937 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C41DBE16D4B2F900B4D937 /* CoreGraphics.framework */; };
@@ -55,6 +57,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22965A7916F1E5D30098F64A /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		22965A7A16F1E5D40098F64A /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		22965A7B16F1E5D40098F64A /* InfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
 		22C41DB716D4B2F900B4D937 /* BrainHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrainHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22C41DBA16D4B2F900B4D937 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		22C41DBC16D4B2F900B4D937 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -170,6 +175,9 @@
 				4F6AFF3C16F1CE8900AAD56E /* ManagerViewController.h */,
 				4F6AFF3D16F1CE8900AAD56E /* ManagerViewController.m */,
 				4F6AFF3E16F1CE8900AAD56E /* ManagerViewController.xib */,
+				22965A7916F1E5D30098F64A /* InfoViewController.h */,
+				22965A7A16F1E5D40098F64A /* InfoViewController.m */,
+				22965A7B16F1E5D40098F64A /* InfoViewController.xib */,
 				22C41DC116D4B2F900B4D937 /* Supporting Files */,
 				4F2D33F916DDEB0000EAF948 /* Resources */,
 			);
@@ -318,6 +326,7 @@
 				4F55B0FB16E9D6B30035F578 /* LoginViewController.xib in Resources */,
 				4F55B0FE16E9D7780035F578 /* 로그인_003.png in Resources */,
 				4F6AFF4016F1CE8900AAD56E /* ManagerViewController.xib in Resources */,
+				22965A7D16F1E5D40098F64A /* InfoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +343,7 @@
 				4F2D340116DDEB8800EAF948 /* MenuViewController.m in Sources */,
 				4F55B0FA16E9D6B30035F578 /* LoginViewController.m in Sources */,
 				4F6AFF3F16F1CE8900AAD56E /* ManagerViewController.m in Sources */,
+				22965A7C16F1E5D40098F64A /* InfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
