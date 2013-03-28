@@ -54,6 +54,7 @@
 		4F55B0FE16E9D7780035F578 /* 로그인_003.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F55B0FD16E9D7780035F578 /* 로그인_003.png */; };
 		4F6AFF3F16F1CE8900AAD56E /* ManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F6AFF3D16F1CE8900AAD56E /* ManagerViewController.m */; };
 		4F6AFF4016F1CE8900AAD56E /* ManagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F6AFF3E16F1CE8900AAD56E /* ManagerViewController.xib */; };
+		4F7ACC6E17027E52006A7E39 /* manager_menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F7ACC6D17027E52006A7E39 /* manager_menu@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -113,6 +114,7 @@
 		4F6AFF3C16F1CE8900AAD56E /* ManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerViewController.h; sourceTree = "<group>"; };
 		4F6AFF3D16F1CE8900AAD56E /* ManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerViewController.m; sourceTree = "<group>"; };
 		4F6AFF3E16F1CE8900AAD56E /* ManagerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ManagerViewController.xib; sourceTree = "<group>"; };
+		4F7ACC6D17027E52006A7E39 /* manager_menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "manager_menu@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +208,7 @@
 				4F55B0B516E9B2B00035F578 /* img0 */,
 				4F2D33FA16DDEB0100EAF948 /* intro@2x.png */,
 				4F2D33FB16DDEB0100EAF948 /* menu@2x.png */,
+				4F7ACC6D17027E52006A7E39 /* manager_menu@2x.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				4F55B0FE16E9D7780035F578 /* 로그인_003.png in Resources */,
 				4F6AFF4016F1CE8900AAD56E /* ManagerViewController.xib in Resources */,
 				22965A7D16F1E5D40098F64A /* InfoViewController.xib in Resources */,
+				4F7ACC6E17027E52006A7E39 /* manager_menu@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,5 +11,10 @@
 @interface LoginViewController : UIViewController
 @property (retain, nonatomic) IBOutlet UITextField *textFieldID;
 @property (retain, nonatomic) IBOutlet UITextField *textFieldPwd;
+@property (copy, nonatomic) NSString* user_id;
+@property (copy, nonatomic) NSString* user_pwd;
+
+- (IBAction)clickLogin:(id)sender;
+- (IBAction)clickManager:(id)sender;
 
 @end
