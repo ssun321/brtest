@@ -84,6 +84,18 @@
     }
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    
+    if(textField == _textFieldID){
+        [_textFieldPwd becomeFirstResponder];
+    }else if(textField == _textFieldPwd){
+        [self clickLogin:nil];
+    }
+    
+    
+    return YES;
+}
+
 - (void)alert:(NSString*)msg{
     UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:@"" message:msg delegate:self cancelButtonTitle:@"확인" otherButtonTitles:nil];
     [alertView show];
