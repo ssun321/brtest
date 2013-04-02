@@ -7,6 +7,7 @@
 //
 
 #import "StartViewController.h"
+#import "ManagerLoginViewController.h"
 
 @interface StartViewController ()
 
@@ -26,7 +27,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    self.viewLogin.hidden = YES;
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -57,18 +60,31 @@
 }
 
 - (IBAction)clickManager:(id)sender {
-    NSString* clsName = @"ManagerViewController";
-    Class cls = NSClassFromString(clsName);
-    UIViewController* vc = [[cls alloc] initWithNibName:clsName bundle:nil];
+    ManagerLoginViewController* vc = [[ManagerLoginViewController alloc] initWithNibName:@"ManagerLoginViewController" bundle:nil];
+    vc.nextKey = @"UserCenterViewController";
     [self.navigationController pushViewController:vc animated:YES];
     [vc release];
 }
+
+- (IBAction)clickTest:(id)sender {
+    UIButton* button = (UIButton*)sender;
+    button.selected = !button.selected;
+    
+    self.viewLogin.hidden = !button.selected;
+    self.viewNoLogin.hidden = button.selected;
+}
+
+
 - (void)dealloc {
     [_label release];
+    [_viewLogin release];
+    [_viewNoLogin release];
     [super dealloc];
 }
 - (void)viewDidUnload {
     [self setLabel:nil];
+    [self setViewLogin:nil];
+    [self setViewNoLogin:nil];
     [super viewDidUnload];
 }
 @end

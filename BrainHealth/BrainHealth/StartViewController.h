@@ -11,9 +11,13 @@
 @interface StartViewController : UIViewController
 
 @property (retain, nonatomic) IBOutlet UILabel *label;
+@property (retain, nonatomic) IBOutlet UIView *viewNoLogin;
+@property (retain, nonatomic) IBOutlet UIView *viewLogin;
+
 - (IBAction)clickLogin:(id)sender;
 - (IBAction)clickAddUser:(id)sender;
 - (IBAction)clickManager:(id)sender;
 
+- (IBAction)clickTest:(id)sender;
 
 @end

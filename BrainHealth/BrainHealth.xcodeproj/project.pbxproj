@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2242F1B1170B17D000474BC5 /* ManagerLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242F1AF170B17D000474BC5 /* ManagerLoginViewController.m */; };
+		2242F1B2170B17D000474BC5 /* ManagerLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2242F1B0170B17D000474BC5 /* ManagerLoginViewController.xib */; };
+		2242F1B6170B1D1500474BC5 /* UserCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242F1B4170B1D1400474BC5 /* UserCenterViewController.m */; };
+		2242F1B7170B1D1500474BC5 /* UserCenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2242F1B5170B1D1500474BC5 /* UserCenterViewController.xib */; };
 		22965A7C16F1E5D40098F64A /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22965A7A16F1E5D40098F64A /* InfoViewController.m */; };
 		22965A7D16F1E5D40098F64A /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22965A7B16F1E5D40098F64A /* InfoViewController.xib */; };
 		22C41DBB16D4B2F900B4D937 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C41DBA16D4B2F900B4D937 /* UIKit.framework */; };
@@ -77,6 +81,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2242F1AE170B17CF00474BC5 /* ManagerLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerLoginViewController.h; sourceTree = "<group>"; };
+		2242F1AF170B17D000474BC5 /* ManagerLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerLoginViewController.m; sourceTree = "<group>"; };
+		2242F1B0170B17D000474BC5 /* ManagerLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ManagerLoginViewController.xib; sourceTree = "<group>"; };
+		2242F1B3170B1D1400474BC5 /* UserCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCenterViewController.h; sourceTree = "<group>"; };
+		2242F1B4170B1D1400474BC5 /* UserCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCenterViewController.m; sourceTree = "<group>"; };
+		2242F1B5170B1D1500474BC5 /* UserCenterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserCenterViewController.xib; sourceTree = "<group>"; };
 		22965A7916F1E5D30098F64A /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
 		22965A7A16F1E5D40098F64A /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
 		22965A7B16F1E5D40098F64A /* InfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
@@ -221,12 +231,18 @@
 				4F6AFF3C16F1CE8900AAD56E /* ManagerViewController.h */,
 				4F6AFF3D16F1CE8900AAD56E /* ManagerViewController.m */,
 				4F6AFF3E16F1CE8900AAD56E /* ManagerViewController.xib */,
+				2242F1AE170B17CF00474BC5 /* ManagerLoginViewController.h */,
+				2242F1AF170B17D000474BC5 /* ManagerLoginViewController.m */,
+				2242F1B0170B17D000474BC5 /* ManagerLoginViewController.xib */,
 				22965A7916F1E5D30098F64A /* InfoViewController.h */,
 				22965A7A16F1E5D40098F64A /* InfoViewController.m */,
 				22965A7B16F1E5D40098F64A /* InfoViewController.xib */,
 				4F2F6232170AD8CD0040C2E5 /* AddUserViewController.h */,
 				4F2F6233170AD8CE0040C2E5 /* AddUserViewController.m */,
 				4F2F6234170AD8D00040C2E5 /* AddUserViewController.xib */,
+				2242F1B3170B1D1400474BC5 /* UserCenterViewController.h */,
+				2242F1B4170B1D1400474BC5 /* UserCenterViewController.m */,
+				2242F1B5170B1D1500474BC5 /* UserCenterViewController.xib */,
 				4F2F623B170AEF160040C2E5 /* User.h */,
 				4F2F623C170AEF1D0040C2E5 /* User.m */,
 				22C41DC116D4B2F900B4D937 /* Supporting Files */,
@@ -418,6 +434,8 @@
 				4F2F6236170AD8D20040C2E5 /* AddUserViewController.xib in Resources */,
 				4F2F623A170AECA20040C2E5 /* test_manager.png in Resources */,
 				4F2F623F170AF2200040C2E5 /* pwd_search.plist in Resources */,
+				2242F1B2170B17D000474BC5 /* ManagerLoginViewController.xib in Resources */,
+				2242F1B7170B1D1500474BC5 /* UserCenterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +456,8 @@
 				4F2F6211170A92380040C2E5 /* StartViewController.m in Sources */,
 				4F2F6235170AD8D20040C2E5 /* AddUserViewController.m in Sources */,
 				4F2F623D170AEF290040C2E5 /* User.m in Sources */,
+				2242F1B1170B17D000474BC5 /* ManagerLoginViewController.m in Sources */,
+				2242F1B6170B1D1500474BC5 /* UserCenterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

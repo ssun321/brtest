@@ -9,7 +9,7 @@
 #import "LoginViewController.h"
 
 #import "MenuViewController.h"
-#import "ManagerViewController.h"
+#import "ManagerLoginViewController.h"
 
 @interface LoginViewController ()
 
@@ -153,9 +153,8 @@
 }
 
 - (IBAction)clickManager:(id)sender {
-    NSString* clsName = @"ManagerViewController";
-    Class cls = NSClassFromString(clsName);
-    UIViewController* vc = [[cls alloc] initWithNibName:clsName bundle:nil];
+    ManagerLoginViewController* vc = [[ManagerLoginViewController alloc] initWithNibName:@"ManagerLoginViewController" bundle:nil];
+    vc.nextKey = @"ManagerViewController";
     [self.navigationController pushViewController:vc animated:YES];
     [vc release];
 }
