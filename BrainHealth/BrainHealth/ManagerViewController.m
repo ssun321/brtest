@@ -26,7 +26,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    UIView* subView = [self.scrollView.subviews objectAtIndex:0];
+    self.scrollView.contentSize = subView.bounds.size;
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,4 +43,15 @@
     return UIInterfaceOrientationIsLandscape(toInterfaceOrientation);
 }
 
+- (void)dealloc {
+    [_scrollView release];
+    [super dealloc];
+}
+- (void)viewDidUnload {
+    [self setScrollView:nil];
+    [super viewDidUnload];
+}
+- (IBAction)clickBack:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
 @end

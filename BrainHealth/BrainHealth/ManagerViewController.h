@@ -10,4 +10,8 @@
 
 @interface ManagerViewController : UIViewController
 
+@property (retain, nonatomic) IBOutlet UIScrollView *scrollView;
+
+- (IBAction)clickBack:(id)sender;
+
 @end

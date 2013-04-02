@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>title</key>
+	<array>
+		<string>좋아하는 과일은?</string>
+		<string>좋아하는 동물은?</string>
+		<string>좋아하는 채소는?</string>
+	</array>
+	<key>item0</key>
+	<array>
+		<string>사과</string>
+		<string>바나나</string>
+		<string>키위</string>
+	</array>
+	<key>item1</key>
+	<array>
+		<string>사자</string>
+		<string>호랑이</string>
+		<string>원숭이</string>
+	</array>
+	<key>item2</key>
+	<array>
+		<string>당근</string>
+		<string>양파</string>
+		<string>마늘</string>
+	</array>
+</dict>
+</plist>

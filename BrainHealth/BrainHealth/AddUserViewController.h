@@ -8,7 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+#import "User.h"
+
 @interface AddUserViewController : UIViewController
+
+@property (retain, nonatomic) User* user;
+@property (retain, nonatomic) NSDictionary* dicSearch;
 
 @property (retain, nonatomic) IBOutlet UITextField *textFieldName;
 @property (retain, nonatomic) IBOutlet UIButton *buttonMan;
