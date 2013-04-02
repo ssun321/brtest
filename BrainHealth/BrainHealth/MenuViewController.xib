@@ -2,13 +2,13 @@
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="8.00">
 	<data>
 		<int key="IBDocument.SystemTarget">1296</int>
-		<string key="IBDocument.SystemVersion">12C60</string>
-		<string key="IBDocument.InterfaceBuilderVersion">2844</string>
-		<string key="IBDocument.AppKitVersion">1187.34</string>
-		<string key="IBDocument.HIToolboxVersion">625.00</string>
+		<string key="IBDocument.SystemVersion">12D78</string>
+		<string key="IBDocument.InterfaceBuilderVersion">3084</string>
+		<string key="IBDocument.AppKitVersion">1187.37</string>
+		<string key="IBDocument.HIToolboxVersion">626.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-			<string key="NS.object.0">1930</string>
+			<string key="NS.object.0">2083</string>
 		</object>
 		<array key="IBDocument.IntegratedClassDependencies">
 			<string>IBProxyObject</string>
@@ -41,6 +41,7 @@
 						<int key="NSvFlags">256</int>
 						<string key="NSFrame">{{320, 122}, {392, 70}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="538135674"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -56,6 +57,7 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{56, 315}, {250, 150}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="670638919"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
@@ -94,6 +96,7 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{277, 285}, {250, 150}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="927532143"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
@@ -119,6 +122,7 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{498, 315}, {250, 150}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="929942718"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
@@ -144,6 +148,7 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{718, 285}, {250, 150}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="257418890"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
@@ -169,6 +174,7 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{431, 530}, {139, 138}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="32542273"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
@@ -194,6 +200,8 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{910, 705}, {73, 20}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
+						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -214,8 +222,9 @@
 						<reference key="IBUIFont" ref="714162123"/>
 					</object>
 				</array>
-				<string key="NSFrame">{{0, 20}, {1024, 748}}</string>
+				<string key="NSFrameSize">{1024, 748}</string>
 				<reference key="NSSuperview"/>
+				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="915214709"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
@@ -225,9 +234,6 @@
 					</object>
 				</object>
 				<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
-				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics">
-					<int key="IBUIStatusBarStyle">2</int>
-				</object>
 				<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
 					<int key="IBUIInterfaceOrientation">3</int>
 					<int key="interfaceOrientation">3</int>
@@ -999,78 +1005,48 @@
 						<reference key="parent" ref="0"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">21</int>
-						<reference key="object" ref="915214709"/>
-						<reference key="parent" ref="766721923"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">23</int>
-						<reference key="object" ref="538135674"/>
-						<reference key="parent" ref="766721923"/>
-						<string key="objectName">Button - 인지치료</string>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">25</int>
-						<reference key="object" ref="670638919"/>
-						<reference key="parent" ref="766721923"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">27</int>
-						<reference key="object" ref="927532143"/>
-						<reference key="parent" ref="766721923"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">28</int>
-						<reference key="object" ref="929942718"/>
-						<reference key="parent" ref="766721923"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">30</int>
-						<reference key="object" ref="257418890"/>
-						<reference key="parent" ref="766721923"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">31</int>
-						<reference key="object" ref="32542273"/>
-						<reference key="parent" ref="766721923"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">33</int>
-						<reference key="object" ref="662247715"/>
+						<int key="objectID">73</int>
+						<reference key="object" ref="860455056"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="192187332"/>
-							<reference ref="555696080"/>
-							<reference ref="738895127"/>
-							<reference ref="75054343"/>
-							<reference ref="387610139"/>
+							<reference ref="525363043"/>
+							<reference ref="199548009"/>
+							<reference ref="627778240"/>
+							<reference ref="934656102"/>
+							<reference ref="358010228"/>
+							<reference ref="445324475"/>
 						</array>
 						<reference key="parent" ref="0"/>
-						<string key="objectName">View - 인지치료 서브메뉴</string>
+						<string key="objectName">View - 인지훈련 서브메뉴</string>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">34</int>
-						<reference key="object" ref="192187332"/>
-						<reference key="parent" ref="662247715"/>
+						<int key="objectID">83</int>
+						<reference key="object" ref="445324475"/>
+						<reference key="parent" ref="860455056"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">35</int>
-						<reference key="object" ref="555696080"/>
-						<reference key="parent" ref="662247715"/>
+						<int key="objectID">78</int>
+						<reference key="object" ref="358010228"/>
+						<reference key="parent" ref="860455056"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">36</int>
-						<reference key="object" ref="738895127"/>
-						<reference key="parent" ref="662247715"/>
+						<int key="objectID">77</int>
+						<reference key="object" ref="934656102"/>
+						<reference key="parent" ref="860455056"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">37</int>
-						<reference key="object" ref="75054343"/>
-						<reference key="parent" ref="662247715"/>
+						<int key="objectID">76</int>
+						<reference key="object" ref="627778240"/>
+						<reference key="parent" ref="860455056"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">39</int>
-						<reference key="object" ref="387610139"/>
-						<reference key="parent" ref="662247715"/>
+						<int key="objectID">75</int>
+						<reference key="object" ref="199548009"/>
+						<reference key="parent" ref="860455056"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">74</int>
+						<reference key="object" ref="525363043"/>
+						<reference key="parent" ref="860455056"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">53</int>
@@ -1086,18 +1062,8 @@
 						<string key="objectName">View - 일기 서브메뉴</string>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">54</int>
-						<reference key="object" ref="609211717"/>
-						<reference key="parent" ref="202663764"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">55</int>
-						<reference key="object" ref="76745295"/>
-						<reference key="parent" ref="202663764"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">56</int>
-						<reference key="object" ref="52537646"/>
+						<int key="objectID">58</int>
+						<reference key="object" ref="499150975"/>
 						<reference key="parent" ref="202663764"/>
 					</object>
 					<object class="IBObjectRecord">
@@ -1106,53 +1072,19 @@
 						<reference key="parent" ref="202663764"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">58</int>
-						<reference key="object" ref="499150975"/>
+						<int key="objectID">56</int>
+						<reference key="object" ref="52537646"/>
 						<reference key="parent" ref="202663764"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">73</int>
-						<reference key="object" ref="860455056"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="525363043"/>
-							<reference ref="199548009"/>
-							<reference ref="627778240"/>
-							<reference ref="934656102"/>
-							<reference ref="358010228"/>
-							<reference ref="445324475"/>
-						</array>
-						<reference key="parent" ref="0"/>
-						<string key="objectName">View - 인지훈련 서브메뉴</string>
+						<int key="objectID">55</int>
+						<reference key="object" ref="76745295"/>
+						<reference key="parent" ref="202663764"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">74</int>
-						<reference key="object" ref="525363043"/>
-						<reference key="parent" ref="860455056"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">75</int>
-						<reference key="object" ref="199548009"/>
-						<reference key="parent" ref="860455056"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">76</int>
-						<reference key="object" ref="627778240"/>
-						<reference key="parent" ref="860455056"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">77</int>
-						<reference key="object" ref="934656102"/>
-						<reference key="parent" ref="860455056"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">78</int>
-						<reference key="object" ref="358010228"/>
-						<reference key="parent" ref="860455056"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">83</int>
-						<reference key="object" ref="445324475"/>
-						<reference key="parent" ref="860455056"/>
+						<int key="objectID">54</int>
+						<reference key="object" ref="609211717"/>
+						<reference key="parent" ref="202663764"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">85</int>
@@ -1169,23 +1101,8 @@
 						<string key="objectName">View - 인지훈련 서브메뉴</string>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">86</int>
-						<reference key="object" ref="22822681"/>
-						<reference key="parent" ref="632590092"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">87</int>
-						<reference key="object" ref="566585850"/>
-						<reference key="parent" ref="632590092"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">88</int>
-						<reference key="object" ref="971783551"/>
-						<reference key="parent" ref="632590092"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">89</int>
-						<reference key="object" ref="41100040"/>
+						<int key="objectID">91</int>
+						<reference key="object" ref="1042456024"/>
 						<reference key="parent" ref="632590092"/>
 					</object>
 					<object class="IBObjectRecord">
@@ -1194,9 +1111,98 @@
 						<reference key="parent" ref="632590092"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">91</int>
-						<reference key="object" ref="1042456024"/>
+						<int key="objectID">89</int>
+						<reference key="object" ref="41100040"/>
 						<reference key="parent" ref="632590092"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">88</int>
+						<reference key="object" ref="971783551"/>
+						<reference key="parent" ref="632590092"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">87</int>
+						<reference key="object" ref="566585850"/>
+						<reference key="parent" ref="632590092"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">86</int>
+						<reference key="object" ref="22822681"/>
+						<reference key="parent" ref="632590092"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">33</int>
+						<reference key="object" ref="662247715"/>
+						<array class="NSMutableArray" key="children">
+							<reference ref="192187332"/>
+							<reference ref="555696080"/>
+							<reference ref="738895127"/>
+							<reference ref="75054343"/>
+							<reference ref="387610139"/>
+						</array>
+						<reference key="parent" ref="0"/>
+						<string key="objectName">View - 인지치료 서브메뉴</string>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">39</int>
+						<reference key="object" ref="387610139"/>
+						<reference key="parent" ref="662247715"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">37</int>
+						<reference key="object" ref="75054343"/>
+						<reference key="parent" ref="662247715"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">36</int>
+						<reference key="object" ref="738895127"/>
+						<reference key="parent" ref="662247715"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">35</int>
+						<reference key="object" ref="555696080"/>
+						<reference key="parent" ref="662247715"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">34</int>
+						<reference key="object" ref="192187332"/>
+						<reference key="parent" ref="662247715"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">23</int>
+						<reference key="object" ref="538135674"/>
+						<reference key="parent" ref="766721923"/>
+						<string key="objectName">Button - 인지치료</string>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">21</int>
+						<reference key="object" ref="915214709"/>
+						<reference key="parent" ref="766721923"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">31</int>
+						<reference key="object" ref="32542273"/>
+						<reference key="parent" ref="766721923"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">30</int>
+						<reference key="object" ref="257418890"/>
+						<reference key="parent" ref="766721923"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">28</int>
+						<reference key="object" ref="929942718"/>
+						<reference key="parent" ref="766721923"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">27</int>
+						<reference key="object" ref="927532143"/>
+						<reference key="parent" ref="766721923"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">25</int>
+						<reference key="object" ref="670638919"/>
+						<reference key="parent" ref="766721923"/>
 					</object>
 				</array>
 			</object>
@@ -1260,7 +1266,176 @@
 			<nil key="sourceID"/>
 			<int key="maxID">114</int>
 		</object>
-		<object class="IBClassDescriber" key="IBDocument.Classes"/>
+		<object class="IBClassDescriber" key="IBDocument.Classes">
+			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
+				<object class="IBPartialClassDescription">
+					<string key="className">MenuViewController</string>
+					<string key="superclassName">UIViewController</string>
+					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="clickMenu00:">id</string>
+						<string key="clickMenu01:">id</string>
+						<string key="clickMenu02:">id</string>
+						<string key="clickMenu0:">id</string>
+						<string key="clickMenu0_close:">id</string>
+						<string key="clickMenu10:">id</string>
+						<string key="clickMenu11:">id</string>
+						<string key="clickMenu12:">id</string>
+						<string key="clickMenu1:">id</string>
+						<string key="clickMenu1_close:">id</string>
+						<string key="clickMenu20:">id</string>
+						<string key="clickMenu21:">id</string>
+						<string key="clickMenu22:">id</string>
+						<string key="clickMenu23:">id</string>
+						<string key="clickMenu2:">id</string>
+						<string key="clickMenu2_close:">id</string>
+						<string key="clickMenu30:">id</string>
+						<string key="clickMenu31:">id</string>
+						<string key="clickMenu32:">id</string>
+						<string key="clickMenu33:">id</string>
+						<string key="clickMenu3:">id</string>
+						<string key="clickMenu3_close:">id</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="clickMenu00:">
+							<string key="name">clickMenu00:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="clickMenu01:">
+							<string key="name">clickMenu01:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="clickMenu02:">
+							<string key="name">clickMenu02:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="clickMenu0:">
+							<string key="name">clickMenu0:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="clickMenu0_close:">
+							<string key="name">clickMenu0_close:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="clickMenu10:">
+							<string key="name">clickMenu10:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="clickMenu11:">
+							<string key="name">clickMenu11:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="clickMenu12:">
+							<string key="name">clickMenu12:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="clickMenu1:">
+							<string key="name">clickMenu1:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="clickMenu1_close:">
+							<string key="name">clickMenu1_close:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="clickMenu20:">
+							<string key="name">clickMenu20:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="clickMenu21:">
+							<string key="name">clickMenu21:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="clickMenu22:">
+							<string key="name">clickMenu22:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="clickMenu23:">
+							<string key="name">clickMenu23:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="clickMenu2:">
+							<string key="name">clickMenu2:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="clickMenu2_close:">
+							<string key="name">clickMenu2_close:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="clickMenu30:">
+							<string key="name">clickMenu30:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="clickMenu31:">
+							<string key="name">clickMenu31:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="clickMenu32:">
+							<string key="name">clickMenu32:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="clickMenu33:">
+							<string key="name">clickMenu33:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="clickMenu3:">
+							<string key="name">clickMenu3:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="clickMenu3_close:">
+							<string key="name">clickMenu3_close:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="buttonMenu0">UIButton</string>
+						<string key="buttonMenu1">UIButton</string>
+						<string key="buttonMenu2">UIButton</string>
+						<string key="buttonMenu3">UIButton</string>
+						<string key="viewMenu0">UIView</string>
+						<string key="viewMenu1">UIView</string>
+						<string key="viewMenu2">UIView</string>
+						<string key="viewMenu3">UIView</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="buttonMenu0">
+							<string key="name">buttonMenu0</string>
+							<string key="candidateClassName">UIButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="buttonMenu1">
+							<string key="name">buttonMenu1</string>
+							<string key="candidateClassName">UIButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="buttonMenu2">
+							<string key="name">buttonMenu2</string>
+							<string key="candidateClassName">UIButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="buttonMenu3">
+							<string key="name">buttonMenu3</string>
+							<string key="candidateClassName">UIButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="viewMenu0">
+							<string key="name">viewMenu0</string>
+							<string key="candidateClassName">UIView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="viewMenu1">
+							<string key="name">viewMenu1</string>
+							<string key="candidateClassName">UIView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="viewMenu2">
+							<string key="name">viewMenu2</string>
+							<string key="candidateClassName">UIView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="viewMenu3">
+							<string key="name">viewMenu3</string>
+							<string key="candidateClassName">UIView</string>
+						</object>
+					</dictionary>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/MenuViewController.h</string>
+					</object>
+				</object>
+			</array>
+		</object>
 		<int key="IBDocument.localizationMode">0</int>
 		<string key="IBDocument.TargetRuntimeIdentifier">IBIPadFramework</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDependencies">
@@ -1282,6 +1457,6 @@
 			<string key="menu_04_BG_over@2x.png">{860, 500}</string>
 			<string key="title_02@2x.png">{743, 140}</string>
 		</dictionary>
-		<string key="IBCocoaTouchPluginVersion">1930</string>
+		<string key="IBCocoaTouchPluginVersion">2083</string>
 	</data>
 </archive>

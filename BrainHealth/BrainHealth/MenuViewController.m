@@ -48,6 +48,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
+{
+    return UIInterfaceOrientationIsLandscape(toInterfaceOrientation);
+}
+
 - (void)dealloc {
     [_viewMenu0 release];
     [_buttonMenu0 release];

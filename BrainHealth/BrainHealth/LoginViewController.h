@@ -15,6 +15,7 @@
 @property (copy, nonatomic) NSString* user_pwd;
 
 - (IBAction)clickLogin:(id)sender;
+- (IBAction)clickSearchPwd:(id)sender;
 - (IBAction)clickManager:(id)sender;
 
 @end

@@ -41,6 +41,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
+{
+    return UIInterfaceOrientationIsLandscape(toInterfaceOrientation);
+}
+
 - (void)dealloc {
     [_textFieldID release];
     [_textFieldPwd release];
@@ -57,22 +62,26 @@
 #pragma mark - UITextFieldDelegate
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField{
-    if(textField == _textFieldPwd){
-        [UIView beginAnimations:@"KEYBOARD_UP" context:NULL];
-        [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
-        [UIView setAnimationDuration:0.3];
-        
-        CGRect frame = self.view.frame;
-        frame.origin.y = -50;
-        self.view.frame = frame;
-        
-        [UIView commitAnimations];
-    }
+    
+    [UIView beginAnimations:@"KEYBOARD_UP" context:NULL];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+    [UIView setAnimationDuration:0.3];
+    
+    CGRect frame = self.view.frame;
+    frame.origin.y = -200;
+    self.view.frame = frame;
+    
+    [UIView commitAnimations];
+    
 }
 
 - (void)textFieldDidEndEditing:(UITextField *)textField{
-    if(textField == _textFieldPwd){
-        [UIView beginAnimations:@"KEYBOARD_UP" context:NULL];
+    
+    UITextField* textFieldOther = (textField == self.textFieldID) ? self.textFieldPwd : self.textFieldID;
+    
+    
+    if(![textFieldOther isFirstResponder]){
+        [UIView beginAnimations:@"KEYBOARD_DOWN" context:NULL];
         [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
         [UIView setAnimationDuration:0.3];
         
@@ -82,6 +91,7 @@
         
         [UIView commitAnimations];
     }
+
 }
 
 - (void)alert:(NSString*)msg{
@@ -102,7 +112,6 @@
 #pragma mark - Button Action
 
 - (IBAction)clickLogin:(id)sender {
-    
     // 아이디가 입력되어 있는지 확인
     if(_textFieldID.text.length == 0){
         [self alert:@"아이디를 입력해 주세요."];
@@ -127,8 +136,12 @@
     [vc release];
 }
 
+- (IBAction)clickSearchPwd:(id)sender{
+    [self alert:@"패스워드 찾기 화면 열기"];
+}
+
 - (IBAction)clickManager:(id)sender {
-    
+    [self alert:@"관리자 메뉴"];
 }
 
 @end

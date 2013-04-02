@@ -7,7 +7,6 @@
 //
 
 #import "RootViewController.h"
-#import "LoginViewController.h"
 
 @interface RootViewController ()
 
@@ -20,9 +19,11 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    UIImageView* imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"intro.png"]];
+    UIImageView* imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Default-Landscape.png"]];
     [self.view insertSubview:imageView atIndex:0];
     [imageView release];
+    
+    [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(clickNext:) userInfo:nil repeats:NO];
 }
 
 - (void)didReceiveMemoryWarning
@@ -37,7 +38,9 @@
 }
 
 - (IBAction)clickNext:(id)sender {
-    LoginViewController* vc = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
+    NSString* clsName = @"StartViewController";
+    Class cls = NSClassFromString(clsName);
+    UIViewController* vc = [[cls alloc] initWithNibName:clsName bundle:nil];
     [self.navigationController pushViewController:vc animated:YES];
     [vc release];
 }

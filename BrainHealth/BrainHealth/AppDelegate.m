@@ -23,6 +23,8 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
+    
+    [UIApplication sharedApplication].statusBarHidden = YES;
 
     self.viewController = [[RootViewController alloc] initWithNibName:@"RootViewController" bundle:nil];
     
