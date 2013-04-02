@@ -64,6 +64,9 @@
 		4F2F6212170A92380040C2E5 /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F2F6210170A92360040C2E5 /* StartViewController.xib */; };
 		4F2F6235170AD8D20040C2E5 /* AddUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F2F6233170AD8CE0040C2E5 /* AddUserViewController.m */; };
 		4F2F6236170AD8D20040C2E5 /* AddUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F2F6234170AD8D00040C2E5 /* AddUserViewController.xib */; };
+		4F2F623A170AECA20040C2E5 /* test_manager.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F2F6239170AEC9D0040C2E5 /* test_manager.png */; };
+		4F2F623D170AEF290040C2E5 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F2F623C170AEF1D0040C2E5 /* User.m */; };
+		4F2F623F170AF2200040C2E5 /* pwd_search.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F2F623E170AF21F0040C2E5 /* pwd_search.plist */; };
 		4F55B0E316E9C09A0035F578 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F55B0E216E9C09A0035F578 /* icon.png */; };
 		4F55B0E516E9C0A10035F578 /* icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F55B0E416E9C0A10035F578 /* icon2.png */; };
 		4F55B0FA16E9D6B30035F578 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F55B0F816E9D6B30035F578 /* LoginViewController.m */; };
@@ -140,6 +143,10 @@
 		4F2F6232170AD8CD0040C2E5 /* AddUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddUserViewController.h; sourceTree = "<group>"; };
 		4F2F6233170AD8CE0040C2E5 /* AddUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddUserViewController.m; sourceTree = "<group>"; };
 		4F2F6234170AD8D00040C2E5 /* AddUserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddUserViewController.xib; sourceTree = "<group>"; };
+		4F2F6239170AEC9D0040C2E5 /* test_manager.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_manager.png; sourceTree = "<group>"; };
+		4F2F623B170AEF160040C2E5 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		4F2F623C170AEF1D0040C2E5 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		4F2F623E170AF21F0040C2E5 /* pwd_search.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = pwd_search.plist; path = Resources/pwd_search.plist; sourceTree = "<group>"; };
 		4F55B0E216E9C09A0035F578 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		4F55B0E416E9C0A10035F578 /* icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon2.png; sourceTree = "<group>"; };
 		4F55B0F716E9D6B30035F578 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -220,6 +227,8 @@
 				4F2F6232170AD8CD0040C2E5 /* AddUserViewController.h */,
 				4F2F6233170AD8CE0040C2E5 /* AddUserViewController.m */,
 				4F2F6234170AD8D00040C2E5 /* AddUserViewController.xib */,
+				4F2F623B170AEF160040C2E5 /* User.h */,
+				4F2F623C170AEF1D0040C2E5 /* User.m */,
 				22C41DC116D4B2F900B4D937 /* Supporting Files */,
 				4F2D33F916DDEB0000EAF948 /* Resources */,
 			);
@@ -237,6 +246,7 @@
 				22C41DCE16D4B2F900B4D937 /* Default@2x.png */,
 				22C41DD016D4B2F900B4D937 /* Default-568h@2x.png */,
 				4F2D33F716DDEA9900EAF948 /* Default-Landscape@2x~ipad.png */,
+				4F2F623E170AF21F0040C2E5 /* pwd_search.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -244,6 +254,7 @@
 		4F2D33F916DDEB0000EAF948 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4F2F6239170AEC9D0040C2E5 /* test_manager.png */,
 				4F2F6201170A8F490040C2E5 /* manager_menu */,
 				4F2F6195170A89140040C2E5 /* login */,
 				4F2D33FB16DDEB0100EAF948 /* menu@2x.png */,
@@ -405,6 +416,8 @@
 				4F2F620D170A8F4A0040C2E5 /* admin_popup_x_over_@2x.png in Resources */,
 				4F2F6212170A92380040C2E5 /* StartViewController.xib in Resources */,
 				4F2F6236170AD8D20040C2E5 /* AddUserViewController.xib in Resources */,
+				4F2F623A170AECA20040C2E5 /* test_manager.png in Resources */,
+				4F2F623F170AF2200040C2E5 /* pwd_search.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +437,7 @@
 				22965A7C16F1E5D40098F64A /* InfoViewController.m in Sources */,
 				4F2F6211170A92380040C2E5 /* StartViewController.m in Sources */,
 				4F2F6235170AD8D20040C2E5 /* AddUserViewController.m in Sources */,
+				4F2F623D170AEF290040C2E5 /* User.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
