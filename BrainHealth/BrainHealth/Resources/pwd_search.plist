@@ -7,16 +7,19 @@
 		<string>좋아하는 과일은?</string>
 		<string>좋아하는 동물은?</string>
 		<string>좋아하는 채소는?</string>
+		<string>좋아하는 장소는?</string>
 	</array>
 	<key>item0</key>
 	<array>
 		<string>사과</string>
 		<string>바나나</string>
 		<string>키위</string>
+		<string>배</string>
 	</array>
 	<key>item1</key>
 	<array>
 		<string>사자</string>
+		<string>고양이</string>
 		<string>호랑이</string>
 		<string>원숭이</string>
 	</array>
@@ -25,6 +28,14 @@
 		<string>당근</string>
 		<string>양파</string>
 		<string>마늘</string>
+	</array>
+	<key>item3</key>
+	<array>
+		<string>서울</string>
+		<string>부산</string>
+		<string>대구</string>
+		<string>광주</string>
+		<string>인천</string>
 	</array>
 </dict>
 </plist>

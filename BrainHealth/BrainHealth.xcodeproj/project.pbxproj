@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22375661170F209100C72C40 /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2237565F170F209100C72C40 /* ResultViewController.m */; };
+		22375662170F209100C72C40 /* ResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22375660170F209100C72C40 /* ResultViewController.xib */; };
 		2242F1B1170B17D000474BC5 /* ManagerLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242F1AF170B17D000474BC5 /* ManagerLoginViewController.m */; };
 		2242F1B2170B17D000474BC5 /* ManagerLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2242F1B0170B17D000474BC5 /* ManagerLoginViewController.xib */; };
 		2242F1B6170B1D1500474BC5 /* UserCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242F1B4170B1D1400474BC5 /* UserCenterViewController.m */; };
@@ -81,6 +83,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2237565E170F209100C72C40 /* ResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultViewController.h; sourceTree = "<group>"; };
+		2237565F170F209100C72C40 /* ResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultViewController.m; sourceTree = "<group>"; };
+		22375660170F209100C72C40 /* ResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResultViewController.xib; sourceTree = "<group>"; };
 		2242F1AE170B17CF00474BC5 /* ManagerLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerLoginViewController.h; sourceTree = "<group>"; };
 		2242F1AF170B17D000474BC5 /* ManagerLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerLoginViewController.m; sourceTree = "<group>"; };
 		2242F1B0170B17D000474BC5 /* ManagerLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ManagerLoginViewController.xib; sourceTree = "<group>"; };
@@ -245,6 +250,9 @@
 				2242F1B5170B1D1500474BC5 /* UserCenterViewController.xib */,
 				4F2F623B170AEF160040C2E5 /* User.h */,
 				4F2F623C170AEF1D0040C2E5 /* User.m */,
+				2237565E170F209100C72C40 /* ResultViewController.h */,
+				2237565F170F209100C72C40 /* ResultViewController.m */,
+				22375660170F209100C72C40 /* ResultViewController.xib */,
 				22C41DC116D4B2F900B4D937 /* Supporting Files */,
 				4F2D33F916DDEB0000EAF948 /* Resources */,
 			);
@@ -436,6 +444,7 @@
 				4F2F623F170AF2200040C2E5 /* pwd_search.plist in Resources */,
 				2242F1B2170B17D000474BC5 /* ManagerLoginViewController.xib in Resources */,
 				2242F1B7170B1D1500474BC5 /* UserCenterViewController.xib in Resources */,
+				22375662170F209100C72C40 /* ResultViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +467,7 @@
 				4F2F623D170AEF290040C2E5 /* User.m in Sources */,
 				2242F1B1170B17D000474BC5 /* ManagerLoginViewController.m in Sources */,
 				2242F1B6170B1D1500474BC5 /* UserCenterViewController.m in Sources */,
+				22375661170F209100C72C40 /* ResultViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
