@@ -18,14 +18,6 @@
 		22C41DD116D4B2F900B4D937 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22C41DD016D4B2F900B4D937 /* Default-568h@2x.png */; };
 		22C41DD416D4B2F900B4D937 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C41DD316D4B2F900B4D937 /* RootViewController.m */; };
 		22C41DD716D4B2FA00B4D937 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22C41DD516D4B2FA00B4D937 /* RootViewController.xib */; };
-		22F93C26171EE3A300E9EAB8 /* admin_user_box_bar1_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22F93C1E171EE3A300E9EAB8 /* admin_user_box_bar1_@2x.png */; };
-		22F93C27171EE3A300E9EAB8 /* admin_user_box_bar2_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22F93C1F171EE3A300E9EAB8 /* admin_user_box_bar2_@2x.png */; };
-		22F93C28171EE3A300E9EAB8 /* admin_user_box_bar3_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22F93C20171EE3A300E9EAB8 /* admin_user_box_bar3_@2x.png */; };
-		22F93C29171EE3A300E9EAB8 /* admin_user_box_menubar_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22F93C21171EE3A300E9EAB8 /* admin_user_box_menubar_@2x.png */; };
-		22F93C2A171EE3A300E9EAB8 /* admin_user_log_button_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22F93C22171EE3A300E9EAB8 /* admin_user_log_button_@2x.png */; };
-		22F93C2B171EE3A300E9EAB8 /* admin_user_log_buttonover_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22F93C23171EE3A300E9EAB8 /* admin_user_log_buttonover_@2x.png */; };
-		22F93C2C171EE3A300E9EAB8 /* test_usercetner.png in Resources */ = {isa = PBXBuildFile; fileRef = 22F93C25171EE3A300E9EAB8 /* test_usercetner.png */; };
-		22F93C2F171EEB3F00E9EAB8 /* UserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F93C2E171EEB3F00E9EAB8 /* UserCell.m */; };
 		4F2D33F816DDEA9900EAF948 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F2D33F716DDEA9900EAF948 /* Default-Landscape@2x~ipad.png */; };
 		4F2D33FD16DDEB0100EAF948 /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F2D33FB16DDEB0100EAF948 /* menu@2x.png */; };
 		4F2F61B4170A89140040C2E5 /* log_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F2F6196170A89140040C2E5 /* log_bg@2x.png */; };
@@ -105,15 +97,6 @@
 		22C41DD216D4B2F900B4D937 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		22C41DD316D4B2F900B4D937 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		22C41DD616D4B2FA00B4D937 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
-		22F93C1E171EE3A300E9EAB8 /* admin_user_box_bar1_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "admin_user_box_bar1_@2x.png"; sourceTree = "<group>"; };
-		22F93C1F171EE3A300E9EAB8 /* admin_user_box_bar2_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "admin_user_box_bar2_@2x.png"; sourceTree = "<group>"; };
-		22F93C20171EE3A300E9EAB8 /* admin_user_box_bar3_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "admin_user_box_bar3_@2x.png"; sourceTree = "<group>"; };
-		22F93C21171EE3A300E9EAB8 /* admin_user_box_menubar_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "admin_user_box_menubar_@2x.png"; sourceTree = "<group>"; };
-		22F93C22171EE3A300E9EAB8 /* admin_user_log_button_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "admin_user_log_button_@2x.png"; sourceTree = "<group>"; };
-		22F93C23171EE3A300E9EAB8 /* admin_user_log_buttonover_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "admin_user_log_buttonover_@2x.png"; sourceTree = "<group>"; };
-		22F93C25171EE3A300E9EAB8 /* test_usercetner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_usercetner.png; sourceTree = "<group>"; };
-		22F93C2D171EEB3F00E9EAB8 /* UserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCell.h; sourceTree = "<group>"; };
-		22F93C2E171EEB3F00E9EAB8 /* UserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCell.m; sourceTree = "<group>"; };
 		4F2D33F716DDEA9900EAF948 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
 		4F2D33FB16DDEB0100EAF948 /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
 		4F2F6196170A89140040C2E5 /* log_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "log_bg@2x.png"; sourceTree = "<group>"; };
@@ -262,33 +245,10 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		22F93C1D171EE3A300E9EAB8 /* user_center */ = {
-			isa = PBXGroup;
-			children = (
-				22F93C1E171EE3A300E9EAB8 /* admin_user_box_bar1_@2x.png */,
-				22F93C1F171EE3A300E9EAB8 /* admin_user_box_bar2_@2x.png */,
-				22F93C20171EE3A300E9EAB8 /* admin_user_box_bar3_@2x.png */,
-				22F93C21171EE3A300E9EAB8 /* admin_user_box_menubar_@2x.png */,
-				22F93C22171EE3A300E9EAB8 /* admin_user_log_button_@2x.png */,
-				22F93C23171EE3A300E9EAB8 /* admin_user_log_buttonover_@2x.png */,
-				22F93C24171EE3A300E9EAB8 /* screenshot */,
-			);
-			path = user_center;
-			sourceTree = "<group>";
-		};
-		22F93C24171EE3A300E9EAB8 /* screenshot */ = {
-			isa = PBXGroup;
-			children = (
-				22F93C25171EE3A300E9EAB8 /* test_usercetner.png */,
-			);
-			path = screenshot;
-			sourceTree = "<group>";
-		};
 		4F2D33F916DDEB0000EAF948 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				4F2F6239170AEC9D0040C2E5 /* test_manager.png */,
-				22F93C1D171EE3A300E9EAB8 /* user_center */,
 				4F2F6201170A8F490040C2E5 /* manager_menu */,
 				4F2F6195170A89140040C2E5 /* login */,
 				4F2D33FB16DDEB0100EAF948 /* menu@2x.png */,
