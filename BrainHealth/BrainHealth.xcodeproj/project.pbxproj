@@ -7,12 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2242F1B1170B17D000474BC5 /* ManagerLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242F1AF170B17D000474BC5 /* ManagerLoginViewController.m */; };
-		2242F1B2170B17D000474BC5 /* ManagerLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2242F1B0170B17D000474BC5 /* ManagerLoginViewController.xib */; };
-		2242F1B6170B1D1500474BC5 /* UserCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242F1B4170B1D1400474BC5 /* UserCenterViewController.m */; };
-		2242F1B7170B1D1500474BC5 /* UserCenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2242F1B5170B1D1500474BC5 /* UserCenterViewController.xib */; };
-		22965A7C16F1E5D40098F64A /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22965A7A16F1E5D40098F64A /* InfoViewController.m */; };
-		22965A7D16F1E5D40098F64A /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22965A7B16F1E5D40098F64A /* InfoViewController.xib */; };
 		22C41DBB16D4B2F900B4D937 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C41DBA16D4B2F900B4D937 /* UIKit.framework */; };
 		22C41DBD16D4B2F900B4D937 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C41DBC16D4B2F900B4D937 /* Foundation.framework */; };
 		22C41DBF16D4B2F900B4D937 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C41DBE16D4B2F900B4D937 /* CoreGraphics.framework */; };
@@ -26,8 +20,6 @@
 		22C41DD716D4B2FA00B4D937 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22C41DD516D4B2FA00B4D937 /* RootViewController.xib */; };
 		4F2D33F816DDEA9900EAF948 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F2D33F716DDEA9900EAF948 /* Default-Landscape@2x~ipad.png */; };
 		4F2D33FD16DDEB0100EAF948 /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F2D33FB16DDEB0100EAF948 /* menu@2x.png */; };
-		4F2D340116DDEB8800EAF948 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F2D33FF16DDEB8800EAF948 /* MenuViewController.m */; };
-		4F2D340216DDEB8800EAF948 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F2D340016DDEB8800EAF948 /* MenuViewController.xib */; };
 		4F2F61B4170A89140040C2E5 /* log_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F2F6196170A89140040C2E5 /* log_bg@2x.png */; };
 		4F2F61B5170A89140040C2E5 /* log_button_01_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F2F6197170A89140040C2E5 /* log_button_01_@2x.png */; };
 		4F2F61B6170A89140040C2E5 /* log_button_01over_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F2F6198170A89140040C2E5 /* log_button_01over_@2x.png */; };
@@ -64,32 +56,31 @@
 		4F2F620B170A8F4A0040C2E5 /* admin_popup_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F2F6205170A8F4A0040C2E5 /* admin_popup_@2x.png */; };
 		4F2F620C170A8F4A0040C2E5 /* admin_popup_x_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F2F6206170A8F4A0040C2E5 /* admin_popup_x_@2x.png */; };
 		4F2F620D170A8F4A0040C2E5 /* admin_popup_x_over_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F2F6207170A8F4A0040C2E5 /* admin_popup_x_over_@2x.png */; };
-		4F2F6211170A92380040C2E5 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F2F620F170A92340040C2E5 /* StartViewController.m */; };
-		4F2F6212170A92380040C2E5 /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F2F6210170A92360040C2E5 /* StartViewController.xib */; };
-		4F2F6235170AD8D20040C2E5 /* AddUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F2F6233170AD8CE0040C2E5 /* AddUserViewController.m */; };
-		4F2F6236170AD8D20040C2E5 /* AddUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F2F6234170AD8D00040C2E5 /* AddUserViewController.xib */; };
 		4F2F623A170AECA20040C2E5 /* test_manager.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F2F6239170AEC9D0040C2E5 /* test_manager.png */; };
-		4F2F623D170AEF290040C2E5 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F2F623C170AEF1D0040C2E5 /* User.m */; };
 		4F2F623F170AF2200040C2E5 /* pwd_search.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F2F623E170AF21F0040C2E5 /* pwd_search.plist */; };
 		4F55B0E316E9C09A0035F578 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F55B0E216E9C09A0035F578 /* icon.png */; };
 		4F55B0E516E9C0A10035F578 /* icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F55B0E416E9C0A10035F578 /* icon2.png */; };
-		4F55B0FA16E9D6B30035F578 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F55B0F816E9D6B30035F578 /* LoginViewController.m */; };
-		4F55B0FB16E9D6B30035F578 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F55B0F916E9D6B30035F578 /* LoginViewController.xib */; };
-		4F6AFF3F16F1CE8900AAD56E /* ManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F6AFF3D16F1CE8900AAD56E /* ManagerViewController.m */; };
-		4F6AFF4016F1CE8900AAD56E /* ManagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F6AFF3E16F1CE8900AAD56E /* ManagerViewController.xib */; };
 		4F7ACC6E17027E52006A7E39 /* manager_menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F7ACC6D17027E52006A7E39 /* manager_menu@2x.png */; };
+		4F8F88CF172A3595008FABC7 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8F88B3172A3595008FABC7 /* LoginViewController.m */; };
+		4F8F88D0172A3595008FABC7 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F8F88B4172A3595008FABC7 /* LoginViewController.xib */; };
+		4F8F88D1172A3595008FABC7 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8F88B6172A3595008FABC7 /* MenuViewController.m */; };
+		4F8F88D2172A3595008FABC7 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F8F88B7172A3595008FABC7 /* MenuViewController.xib */; };
+		4F8F88D3172A3595008FABC7 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8F88B9172A3595008FABC7 /* StartViewController.m */; };
+		4F8F88D4172A3595008FABC7 /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F8F88BA172A3595008FABC7 /* StartViewController.xib */; };
+		4F8F88D5172A3595008FABC7 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8F88BD172A3595008FABC7 /* InfoViewController.m */; };
+		4F8F88D6172A3595008FABC7 /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F8F88BE172A3595008FABC7 /* InfoViewController.xib */; };
+		4F8F88D7172A3595008FABC7 /* ManagerLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8F88C0172A3595008FABC7 /* ManagerLoginViewController.m */; };
+		4F8F88D8172A3595008FABC7 /* ManagerLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F8F88C1172A3595008FABC7 /* ManagerLoginViewController.xib */; };
+		4F8F88D9172A3595008FABC7 /* ManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8F88C3172A3595008FABC7 /* ManagerViewController.m */; };
+		4F8F88DA172A3595008FABC7 /* ManagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F8F88C4172A3595008FABC7 /* ManagerViewController.xib */; };
+		4F8F88DB172A3595008FABC7 /* AddUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8F88C8172A3595008FABC7 /* AddUserViewController.m */; };
+		4F8F88DC172A3595008FABC7 /* AddUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F8F88C9172A3595008FABC7 /* AddUserViewController.xib */; };
+		4F8F88DD172A3595008FABC7 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8F88CB172A3595008FABC7 /* User.m */; };
+		4F8F88DE172A3595008FABC7 /* UserCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8F88CD172A3595008FABC7 /* UserCenterViewController.m */; };
+		4F8F88DF172A3595008FABC7 /* UserCenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F8F88CE172A3595008FABC7 /* UserCenterViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2242F1AE170B17CF00474BC5 /* ManagerLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerLoginViewController.h; sourceTree = "<group>"; };
-		2242F1AF170B17D000474BC5 /* ManagerLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerLoginViewController.m; sourceTree = "<group>"; };
-		2242F1B0170B17D000474BC5 /* ManagerLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ManagerLoginViewController.xib; sourceTree = "<group>"; };
-		2242F1B3170B1D1400474BC5 /* UserCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCenterViewController.h; sourceTree = "<group>"; };
-		2242F1B4170B1D1400474BC5 /* UserCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCenterViewController.m; sourceTree = "<group>"; };
-		2242F1B5170B1D1500474BC5 /* UserCenterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserCenterViewController.xib; sourceTree = "<group>"; };
-		22965A7916F1E5D30098F64A /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
-		22965A7A16F1E5D40098F64A /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
-		22965A7B16F1E5D40098F64A /* InfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
 		22C41DB716D4B2F900B4D937 /* BrainHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrainHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22C41DBA16D4B2F900B4D937 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		22C41DBC16D4B2F900B4D937 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -108,9 +99,6 @@
 		22C41DD616D4B2FA00B4D937 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
 		4F2D33F716DDEA9900EAF948 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
 		4F2D33FB16DDEB0100EAF948 /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
-		4F2D33FE16DDEB8800EAF948 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
-		4F2D33FF16DDEB8800EAF948 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
-		4F2D340016DDEB8800EAF948 /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
 		4F2F6196170A89140040C2E5 /* log_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "log_bg@2x.png"; sourceTree = "<group>"; };
 		4F2F6197170A89140040C2E5 /* log_button_01_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "log_button_01_@2x.png"; sourceTree = "<group>"; };
 		4F2F6198170A89140040C2E5 /* log_button_01over_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "log_button_01over_@2x.png"; sourceTree = "<group>"; };
@@ -147,25 +135,37 @@
 		4F2F6205170A8F4A0040C2E5 /* admin_popup_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "admin_popup_@2x.png"; sourceTree = "<group>"; };
 		4F2F6206170A8F4A0040C2E5 /* admin_popup_x_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "admin_popup_x_@2x.png"; sourceTree = "<group>"; };
 		4F2F6207170A8F4A0040C2E5 /* admin_popup_x_over_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "admin_popup_x_over_@2x.png"; sourceTree = "<group>"; };
-		4F2F620E170A92320040C2E5 /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
-		4F2F620F170A92340040C2E5 /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
-		4F2F6210170A92360040C2E5 /* StartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartViewController.xib; sourceTree = "<group>"; };
-		4F2F6232170AD8CD0040C2E5 /* AddUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddUserViewController.h; sourceTree = "<group>"; };
-		4F2F6233170AD8CE0040C2E5 /* AddUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddUserViewController.m; sourceTree = "<group>"; };
-		4F2F6234170AD8D00040C2E5 /* AddUserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddUserViewController.xib; sourceTree = "<group>"; };
 		4F2F6239170AEC9D0040C2E5 /* test_manager.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_manager.png; sourceTree = "<group>"; };
-		4F2F623B170AEF160040C2E5 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		4F2F623C170AEF1D0040C2E5 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		4F2F623E170AF21F0040C2E5 /* pwd_search.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = pwd_search.plist; path = Resources/pwd_search.plist; sourceTree = "<group>"; };
 		4F55B0E216E9C09A0035F578 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		4F55B0E416E9C0A10035F578 /* icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon2.png; sourceTree = "<group>"; };
-		4F55B0F716E9D6B30035F578 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		4F55B0F816E9D6B30035F578 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		4F55B0F916E9D6B30035F578 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
-		4F6AFF3C16F1CE8900AAD56E /* ManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerViewController.h; sourceTree = "<group>"; };
-		4F6AFF3D16F1CE8900AAD56E /* ManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerViewController.m; sourceTree = "<group>"; };
-		4F6AFF3E16F1CE8900AAD56E /* ManagerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ManagerViewController.xib; sourceTree = "<group>"; };
 		4F7ACC6D17027E52006A7E39 /* manager_menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "manager_menu@2x.png"; sourceTree = "<group>"; };
+		4F8F88B2172A3595008FABC7 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		4F8F88B3172A3595008FABC7 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		4F8F88B4172A3595008FABC7 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		4F8F88B5172A3595008FABC7 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		4F8F88B6172A3595008FABC7 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		4F8F88B7172A3595008FABC7 /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		4F8F88B8172A3595008FABC7 /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
+		4F8F88B9172A3595008FABC7 /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
+		4F8F88BA172A3595008FABC7 /* StartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartViewController.xib; sourceTree = "<group>"; };
+		4F8F88BC172A3595008FABC7 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		4F8F88BD172A3595008FABC7 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		4F8F88BE172A3595008FABC7 /* InfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
+		4F8F88BF172A3595008FABC7 /* ManagerLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerLoginViewController.h; sourceTree = "<group>"; };
+		4F8F88C0172A3595008FABC7 /* ManagerLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerLoginViewController.m; sourceTree = "<group>"; };
+		4F8F88C1172A3595008FABC7 /* ManagerLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ManagerLoginViewController.xib; sourceTree = "<group>"; };
+		4F8F88C2172A3595008FABC7 /* ManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerViewController.h; sourceTree = "<group>"; };
+		4F8F88C3172A3595008FABC7 /* ManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerViewController.m; sourceTree = "<group>"; };
+		4F8F88C4172A3595008FABC7 /* ManagerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ManagerViewController.xib; sourceTree = "<group>"; };
+		4F8F88C7172A3595008FABC7 /* AddUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddUserViewController.h; sourceTree = "<group>"; };
+		4F8F88C8172A3595008FABC7 /* AddUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddUserViewController.m; sourceTree = "<group>"; };
+		4F8F88C9172A3595008FABC7 /* AddUserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddUserViewController.xib; sourceTree = "<group>"; };
+		4F8F88CA172A3595008FABC7 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		4F8F88CB172A3595008FABC7 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		4F8F88CC172A3595008FABC7 /* UserCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCenterViewController.h; sourceTree = "<group>"; };
+		4F8F88CD172A3595008FABC7 /* UserCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCenterViewController.m; sourceTree = "<group>"; };
+		4F8F88CE172A3595008FABC7 /* UserCenterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserCenterViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,32 +219,10 @@
 				22C41DD216D4B2F900B4D937 /* RootViewController.h */,
 				22C41DD316D4B2F900B4D937 /* RootViewController.m */,
 				22C41DD516D4B2FA00B4D937 /* RootViewController.xib */,
-				4F2F620E170A92320040C2E5 /* StartViewController.h */,
-				4F2F620F170A92340040C2E5 /* StartViewController.m */,
-				4F2F6210170A92360040C2E5 /* StartViewController.xib */,
-				4F55B0F716E9D6B30035F578 /* LoginViewController.h */,
-				4F55B0F816E9D6B30035F578 /* LoginViewController.m */,
-				4F55B0F916E9D6B30035F578 /* LoginViewController.xib */,
-				4F2D33FE16DDEB8800EAF948 /* MenuViewController.h */,
-				4F2D33FF16DDEB8800EAF948 /* MenuViewController.m */,
-				4F2D340016DDEB8800EAF948 /* MenuViewController.xib */,
-				4F6AFF3C16F1CE8900AAD56E /* ManagerViewController.h */,
-				4F6AFF3D16F1CE8900AAD56E /* ManagerViewController.m */,
-				4F6AFF3E16F1CE8900AAD56E /* ManagerViewController.xib */,
-				2242F1AE170B17CF00474BC5 /* ManagerLoginViewController.h */,
-				2242F1AF170B17D000474BC5 /* ManagerLoginViewController.m */,
-				2242F1B0170B17D000474BC5 /* ManagerLoginViewController.xib */,
-				22965A7916F1E5D30098F64A /* InfoViewController.h */,
-				22965A7A16F1E5D40098F64A /* InfoViewController.m */,
-				22965A7B16F1E5D40098F64A /* InfoViewController.xib */,
-				4F2F6232170AD8CD0040C2E5 /* AddUserViewController.h */,
-				4F2F6233170AD8CE0040C2E5 /* AddUserViewController.m */,
-				4F2F6234170AD8D00040C2E5 /* AddUserViewController.xib */,
-				2242F1B3170B1D1400474BC5 /* UserCenterViewController.h */,
-				2242F1B4170B1D1400474BC5 /* UserCenterViewController.m */,
-				2242F1B5170B1D1500474BC5 /* UserCenterViewController.xib */,
-				4F2F623B170AEF160040C2E5 /* User.h */,
-				4F2F623C170AEF1D0040C2E5 /* User.m */,
+				4F8F88B1172A3595008FABC7 /* vc_base */,
+				4F8F88BB172A3595008FABC7 /* vc_manager */,
+				4F8F88C5172A3595008FABC7 /* vc_result */,
+				4F8F88C6172A3595008FABC7 /* vc_usercenter */,
 				22C41DC116D4B2F900B4D937 /* Supporting Files */,
 				4F2D33F916DDEB0000EAF948 /* Resources */,
 			);
@@ -329,6 +307,60 @@
 			path = manager_menu;
 			sourceTree = "<group>";
 		};
+		4F8F88B1172A3595008FABC7 /* vc_base */ = {
+			isa = PBXGroup;
+			children = (
+				4F8F88B2172A3595008FABC7 /* LoginViewController.h */,
+				4F8F88B3172A3595008FABC7 /* LoginViewController.m */,
+				4F8F88B4172A3595008FABC7 /* LoginViewController.xib */,
+				4F8F88B5172A3595008FABC7 /* MenuViewController.h */,
+				4F8F88B6172A3595008FABC7 /* MenuViewController.m */,
+				4F8F88B7172A3595008FABC7 /* MenuViewController.xib */,
+				4F8F88B8172A3595008FABC7 /* StartViewController.h */,
+				4F8F88B9172A3595008FABC7 /* StartViewController.m */,
+				4F8F88BA172A3595008FABC7 /* StartViewController.xib */,
+			);
+			path = vc_base;
+			sourceTree = "<group>";
+		};
+		4F8F88BB172A3595008FABC7 /* vc_manager */ = {
+			isa = PBXGroup;
+			children = (
+				4F8F88BC172A3595008FABC7 /* InfoViewController.h */,
+				4F8F88BD172A3595008FABC7 /* InfoViewController.m */,
+				4F8F88BE172A3595008FABC7 /* InfoViewController.xib */,
+				4F8F88BF172A3595008FABC7 /* ManagerLoginViewController.h */,
+				4F8F88C0172A3595008FABC7 /* ManagerLoginViewController.m */,
+				4F8F88C1172A3595008FABC7 /* ManagerLoginViewController.xib */,
+				4F8F88C2172A3595008FABC7 /* ManagerViewController.h */,
+				4F8F88C3172A3595008FABC7 /* ManagerViewController.m */,
+				4F8F88C4172A3595008FABC7 /* ManagerViewController.xib */,
+			);
+			path = vc_manager;
+			sourceTree = "<group>";
+		};
+		4F8F88C5172A3595008FABC7 /* vc_result */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = vc_result;
+			sourceTree = "<group>";
+		};
+		4F8F88C6172A3595008FABC7 /* vc_usercenter */ = {
+			isa = PBXGroup;
+			children = (
+				4F8F88C7172A3595008FABC7 /* AddUserViewController.h */,
+				4F8F88C8172A3595008FABC7 /* AddUserViewController.m */,
+				4F8F88C9172A3595008FABC7 /* AddUserViewController.xib */,
+				4F8F88CA172A3595008FABC7 /* User.h */,
+				4F8F88CB172A3595008FABC7 /* User.m */,
+				4F8F88CC172A3595008FABC7 /* UserCenterViewController.h */,
+				4F8F88CD172A3595008FABC7 /* UserCenterViewController.m */,
+				4F8F88CE172A3595008FABC7 /* UserCenterViewController.xib */,
+			);
+			path = vc_usercenter;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -387,12 +419,8 @@
 				22C41DD716D4B2FA00B4D937 /* RootViewController.xib in Resources */,
 				4F2D33F816DDEA9900EAF948 /* Default-Landscape@2x~ipad.png in Resources */,
 				4F2D33FD16DDEB0100EAF948 /* menu@2x.png in Resources */,
-				4F2D340216DDEB8800EAF948 /* MenuViewController.xib in Resources */,
 				4F55B0E316E9C09A0035F578 /* icon.png in Resources */,
 				4F55B0E516E9C0A10035F578 /* icon2.png in Resources */,
-				4F55B0FB16E9D6B30035F578 /* LoginViewController.xib in Resources */,
-				4F6AFF4016F1CE8900AAD56E /* ManagerViewController.xib in Resources */,
-				22965A7D16F1E5D40098F64A /* InfoViewController.xib in Resources */,
 				4F7ACC6E17027E52006A7E39 /* manager_menu@2x.png in Resources */,
 				4F2F61B4170A89140040C2E5 /* log_bg@2x.png in Resources */,
 				4F2F61B5170A89140040C2E5 /* log_button_01_@2x.png in Resources */,
@@ -430,12 +458,16 @@
 				4F2F620B170A8F4A0040C2E5 /* admin_popup_@2x.png in Resources */,
 				4F2F620C170A8F4A0040C2E5 /* admin_popup_x_@2x.png in Resources */,
 				4F2F620D170A8F4A0040C2E5 /* admin_popup_x_over_@2x.png in Resources */,
-				4F2F6212170A92380040C2E5 /* StartViewController.xib in Resources */,
-				4F2F6236170AD8D20040C2E5 /* AddUserViewController.xib in Resources */,
 				4F2F623A170AECA20040C2E5 /* test_manager.png in Resources */,
 				4F2F623F170AF2200040C2E5 /* pwd_search.plist in Resources */,
-				2242F1B2170B17D000474BC5 /* ManagerLoginViewController.xib in Resources */,
-				2242F1B7170B1D1500474BC5 /* UserCenterViewController.xib in Resources */,
+				4F8F88D0172A3595008FABC7 /* LoginViewController.xib in Resources */,
+				4F8F88D2172A3595008FABC7 /* MenuViewController.xib in Resources */,
+				4F8F88D4172A3595008FABC7 /* StartViewController.xib in Resources */,
+				4F8F88D6172A3595008FABC7 /* InfoViewController.xib in Resources */,
+				4F8F88D8172A3595008FABC7 /* ManagerLoginViewController.xib in Resources */,
+				4F8F88DA172A3595008FABC7 /* ManagerViewController.xib in Resources */,
+				4F8F88DC172A3595008FABC7 /* AddUserViewController.xib in Resources */,
+				4F8F88DF172A3595008FABC7 /* UserCenterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,15 +481,15 @@
 				22C41DC716D4B2F900B4D937 /* main.m in Sources */,
 				22C41DCB16D4B2F900B4D937 /* AppDelegate.m in Sources */,
 				22C41DD416D4B2F900B4D937 /* RootViewController.m in Sources */,
-				4F2D340116DDEB8800EAF948 /* MenuViewController.m in Sources */,
-				4F55B0FA16E9D6B30035F578 /* LoginViewController.m in Sources */,
-				4F6AFF3F16F1CE8900AAD56E /* ManagerViewController.m in Sources */,
-				22965A7C16F1E5D40098F64A /* InfoViewController.m in Sources */,
-				4F2F6211170A92380040C2E5 /* StartViewController.m in Sources */,
-				4F2F6235170AD8D20040C2E5 /* AddUserViewController.m in Sources */,
-				4F2F623D170AEF290040C2E5 /* User.m in Sources */,
-				2242F1B1170B17D000474BC5 /* ManagerLoginViewController.m in Sources */,
-				2242F1B6170B1D1500474BC5 /* UserCenterViewController.m in Sources */,
+				4F8F88CF172A3595008FABC7 /* LoginViewController.m in Sources */,
+				4F8F88D1172A3595008FABC7 /* MenuViewController.m in Sources */,
+				4F8F88D3172A3595008FABC7 /* StartViewController.m in Sources */,
+				4F8F88D5172A3595008FABC7 /* InfoViewController.m in Sources */,
+				4F8F88D7172A3595008FABC7 /* ManagerLoginViewController.m in Sources */,
+				4F8F88D9172A3595008FABC7 /* ManagerViewController.m in Sources */,
+				4F8F88DB172A3595008FABC7 /* AddUserViewController.m in Sources */,
+				4F8F88DD172A3595008FABC7 /* User.m in Sources */,
+				4F8F88DE172A3595008FABC7 /* UserCenterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
