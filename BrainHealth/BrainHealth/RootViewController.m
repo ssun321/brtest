@@ -41,7 +41,7 @@
     
 #warning 시작화면 설정(바꿔서 테스트)
     //NSString* clsName = @"StartViewController";
-    NSString* clsName = @"UserCenterViewController";
+    NSString* clsName = @"ResultViewController";
     Class cls = NSClassFromString(clsName);
     UIViewController* vc = [[cls alloc] initWithNibName:clsName bundle:nil];
     [self.navigationController pushViewController:vc animated:YES];

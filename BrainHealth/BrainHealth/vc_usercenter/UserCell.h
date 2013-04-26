@@ -16,4 +16,7 @@
 
 @property (nonatomic, assign) User* user;
 
+
+- (void)settingBackgroundWithIndex:(int)index last:(BOOL)isLast;
+
 @end
