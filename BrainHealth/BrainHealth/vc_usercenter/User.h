@@ -17,4 +17,7 @@
 @property (nonatomic, copy) NSString* userPwd;
 @property (nonatomic, assign) int hint;
 
+@property (nonatomic, assign) int level;
+@property (nonatomic, copy) NSDate* dateStart;
+
 @end

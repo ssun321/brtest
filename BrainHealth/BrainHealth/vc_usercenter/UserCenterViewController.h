@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface UserCenterViewController : UIViewController
+
+@property (nonatomic, retain) NSMutableArray* arrayUser;
+@property (retain, nonatomic) IBOutlet UITableView *tableView;
+
 - (IBAction)clickBack:(id)sender;
 
 @end
