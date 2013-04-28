@@ -22,6 +22,11 @@ typedef enum {
 
 @property (nonatomic, retain) UIView* viewBack;
 @property (nonatomic, retain) UIImageView* imageViewMain;
+@property (nonatomic, retain) UIButton* buttonLeft;
+@property (nonatomic, retain) UIButton* buttonRight;
+
+
+- (void)resetRect:(CGRect)rect;
 
 
 @end

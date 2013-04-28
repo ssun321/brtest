@@ -8,7 +8,6 @@
 
 #import <QuartzCore/QuartzCore.h>
 
-#import "result.h"
 #import "GraphCell.h"
 
 @implementation GraphCell
@@ -25,34 +24,36 @@
         
         UIImage* image = [UIImage imageNamed:@"result_graph_contents_01_.png"];
         _imageViewMain = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, image.size.width, image.size.height)];
+        _imageViewMain.center = CGPointMake(self.frame.size.width / 2, self.frame.size.height / 2);
         [_viewBack addSubview:_imageViewMain];
         [_imageViewMain release];
         
         UIImage* image0;
         UIImage* image1;
+        UIButton* button;
         
         int y = 0;
         
         image0 = [UIImage imageNamed:@"result_graph_before_button_.png"];
         image1 = [UIImage imageNamed:@"result_graph_before_buttonover_.png"];
         
-        y = (RESULT_TABLE_ROW - image0.size.height) / 2;
+        y = (self.frame.size.height - image0.size.height) / 2;
         
-        _buttonLeft = [UIButton buttonWithType:UIButtonTypeCustom];
-        _buttonLeft.frame = CGRectMake(_imageViewMain.frame.origin.x - image0.size.width, y, image0.size.width, image0.size.height);
-        [_buttonLeft setImage:image0 forState:UIControlStateNormal];
-        [_buttonLeft setImage:image1 forState:UIControlStateHighlighted];
-        [_buttonLeft addTarget:self action:@selector(clickBefore:) forControlEvents:UIControlEventTouchUpInside];
-        [_viewBack addSubview:_buttonLeft];
+        button = [UIButton buttonWithType:UIButtonTypeCustom];
+        button.frame = CGRectMake(_imageViewMain.frame.origin.x - image0.size.width, y, image0.size.width, image0.size.height);
+        [button setImage:image0 forState:UIControlStateNormal];
+        [button setImage:image1 forState:UIControlStateHighlighted];
+        [button addTarget:self action:@selector(clickBefore:) forControlEvents:UIControlEventTouchUpInside];
+        [_viewBack addSubview:button];
         
         image0 = [UIImage imageNamed:@"result_graph_next_button_.png"];
         image1 = [UIImage imageNamed:@"result_graph_next_buttonover_.png"];
-        _buttonRight = [UIButton buttonWithType:UIButtonTypeCustom];
-        _buttonRight.frame = CGRectMake(_imageViewMain.frame.origin.x + _imageViewMain.frame.size.width, y, image0.size.width, image0.size.height);
-        [_buttonRight setImage:image0 forState:UIControlStateNormal];
-        [_buttonRight setImage:image1 forState:UIControlStateHighlighted];
-        [_buttonRight addTarget:self action:@selector(clickNext:) forControlEvents:UIControlEventTouchUpInside];
-        [_viewBack addSubview:_buttonRight];
+        button = [UIButton buttonWithType:UIButtonTypeCustom];
+        button.frame = CGRectMake(_imageViewMain.frame.origin.x + _imageViewMain.frame.size.width, y, image0.size.width, image0.size.height);
+        [button setImage:image0 forState:UIControlStateNormal];
+        [button setImage:image1 forState:UIControlStateHighlighted];
+        [button addTarget:self action:@selector(clickNext:) forControlEvents:UIControlEventTouchUpInside];
+        [_viewBack addSubview:button];
         
         self.type = GraphTypeDay;
         
@@ -73,18 +74,13 @@
     [super dealloc];
 }
 
-- (void)resetRect:(CGRect)rect{
-    self.viewBack.frame = rect;
-    self.imageViewMain.center = self.viewBack.center;
+- (void)layoutSubviews{
     
-    CGRect r = self.buttonLeft.frame;
+    _viewBack.frame = self.contentView.bounds;
     
-    int y = (rect.size.height - r.size.height) / 2;
     
-    self.buttonLeft.frame = CGRectMake(_imageViewMain.frame.origin.x - r.size.width, y, r.size.width, r.size.height);
-    self.buttonRight.frame = CGRectMake(_imageViewMain.frame.origin.x + _imageViewMain.frame.size.width, r.origin.y, r.size.width, r.size.height);
+    
 }
-
 
 #pragma mark - set property
 
@@ -126,7 +122,7 @@
     [animation setDuration:0.3f];
     [animation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
     
-    [[self.imageViewMain layer] addAnimation:animation forKey:@"View Change Ani"];
+    [[self.imageView layer] addAnimation:animation forKey:@"View Change Ani"];
     
 }
 
@@ -145,7 +141,7 @@
     [animation setDuration:0.3f];
     [animation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
     
-    [[self.imageViewMain layer] addAnimation:animation forKey:@"View Change Ani"];
+    [[self.imageView layer] addAnimation:animation forKey:@"View Change Ani"];
 }
 
 

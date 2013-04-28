@@ -9,6 +9,8 @@
 #import "ResultViewController.h"
 #import "GraphView.h"
 
+#import "result.h"
+
 @interface ResultViewController ()
 
 @end
@@ -33,12 +35,12 @@
     
     GraphView* graphView;
     
-    int h = 291;
+    int h = RESULT_TABLE_ROW;
     for(int i = 0; i < 8; i++){
         graphView = [[GraphView alloc] initWithFrame:CGRectMake(0, i * h, self.scrollView.frame.size.width, h)];
         [self.scrollView addSubview:graphView];
         [graphView release];
-        //graphView.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"result_graph_contents_0%d_.png", i + 1]];
+        graphView.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"result_graph_contents_0%d_.png", i + 1]];
         [graphView.button addTarget:self action:@selector(clickToogle:) forControlEvents:UIControlEventTouchUpInside];
     }
     

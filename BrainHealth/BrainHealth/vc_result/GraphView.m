@@ -8,6 +8,8 @@
 
 #import <QuartzCore/QuartzCore.h>
 
+#import "result.h"
+
 #import "GraphView.h"
 #import "GraphCell.h"
 
@@ -61,6 +63,7 @@
     cell = [tableView dequeueReusableCellWithIdentifier:@"GraphCell"];
     if(cell == nil){
         cell = [[GraphCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"GraphCell"];
+        [cell resetRect:CGRectMake(0, 0, tableView.frame.size.width, RESULT_TABLE_ROW)];
     }
     return cell;
 }
@@ -68,7 +71,7 @@
 #pragma mark - UITableViewDelegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 291;
+    return RESULT_TABLE_ROW;
 }
 
 @end
