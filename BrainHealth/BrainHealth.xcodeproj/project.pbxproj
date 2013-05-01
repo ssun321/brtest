@@ -110,6 +110,12 @@
 		22C41DD116D4B2F900B4D937 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22C41DD016D4B2F900B4D937 /* Default-568h@2x.png */; };
 		22C41DD416D4B2F900B4D937 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C41DD316D4B2F900B4D937 /* RootViewController.m */; };
 		22C41DD716D4B2FA00B4D937 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22C41DD516D4B2FA00B4D937 /* RootViewController.xib */; };
+		22F70D8717314D60007C0F8C /* ReTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F70D8517314D60007C0F8C /* ReTestViewController.m */; };
+		22F70D8817314D60007C0F8C /* ReTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22F70D8617314D60007C0F8C /* ReTestViewController.xib */; };
+		22F70D8D17314E64007C0F8C /* test_retest.png in Resources */ = {isa = PBXBuildFile; fileRef = 22F70D8C17314E64007C0F8C /* test_retest.png */; };
+		22F70DA017314FE6007C0F8C /* test_inji.png in Resources */ = {isa = PBXBuildFile; fileRef = 22F70D9C17314FE6007C0F8C /* test_inji.png */; };
+		22F70DA117314FE6007C0F8C /* TrainingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F70D9E17314FE6007C0F8C /* TrainingViewController.m */; };
+		22F70DA217314FE6007C0F8C /* TrainingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22F70D9F17314FE6007C0F8C /* TrainingViewController.xib */; };
 		4F0096E2172E4063003A4570 /* item.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F0096E1172E4063003A4570 /* item.plist */; };
 		4F0096E6172E4720003A4570 /* ItemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0096E5172E4720003A4570 /* ItemManager.m */; };
 		4F0096E9172E7EA9003A4570 /* ManagerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0096E8172E7EA9003A4570 /* ManagerCell.m */; };
@@ -291,6 +297,14 @@
 		22C41DD216D4B2F900B4D937 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		22C41DD316D4B2F900B4D937 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		22C41DD616D4B2FA00B4D937 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		22F70D8417314D60007C0F8C /* ReTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReTestViewController.h; sourceTree = "<group>"; };
+		22F70D8517314D60007C0F8C /* ReTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReTestViewController.m; sourceTree = "<group>"; };
+		22F70D8617314D60007C0F8C /* ReTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReTestViewController.xib; sourceTree = "<group>"; };
+		22F70D8C17314E64007C0F8C /* test_retest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_retest.png; sourceTree = "<group>"; };
+		22F70D9C17314FE6007C0F8C /* test_inji.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_inji.png; sourceTree = "<group>"; };
+		22F70D9D17314FE6007C0F8C /* TrainingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainingViewController.h; sourceTree = "<group>"; };
+		22F70D9E17314FE6007C0F8C /* TrainingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrainingViewController.m; sourceTree = "<group>"; };
+		22F70D9F17314FE6007C0F8C /* TrainingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrainingViewController.xib; sourceTree = "<group>"; };
 		4F0096E1172E4063003A4570 /* item.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = item.plist; sourceTree = "<group>"; };
 		4F0096E4172E4720003A4570 /* ItemManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemManager.h; sourceTree = "<group>"; };
 		4F0096E5172E4720003A4570 /* ItemManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemManager.m; sourceTree = "<group>"; };
@@ -550,6 +564,8 @@
 				4F8F88BB172A3595008FABC7 /* vc_manager */,
 				4F8F88C5172A3595008FABC7 /* vc_result */,
 				4F8F88C6172A3595008FABC7 /* vc_usercenter */,
+				22F70D8317314D39007C0F8C /* vc_retest */,
+				22F70D9B17314FE6007C0F8C /* vc_training */,
 				22C41DC116D4B2F900B4D937 /* Supporting Files */,
 				4F2D33F916DDEB0000EAF948 /* Resources */,
 			);
@@ -571,6 +587,28 @@
 				4F0096E1172E4063003A4570 /* item.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22F70D8317314D39007C0F8C /* vc_retest */ = {
+			isa = PBXGroup;
+			children = (
+				22F70D8417314D60007C0F8C /* ReTestViewController.h */,
+				22F70D8517314D60007C0F8C /* ReTestViewController.m */,
+				22F70D8617314D60007C0F8C /* ReTestViewController.xib */,
+				22F70D8C17314E64007C0F8C /* test_retest.png */,
+			);
+			path = vc_retest;
+			sourceTree = "<group>";
+		};
+		22F70D9B17314FE6007C0F8C /* vc_training */ = {
+			isa = PBXGroup;
+			children = (
+				22F70D9C17314FE6007C0F8C /* test_inji.png */,
+				22F70D9D17314FE6007C0F8C /* TrainingViewController.h */,
+				22F70D9E17314FE6007C0F8C /* TrainingViewController.m */,
+				22F70D9F17314FE6007C0F8C /* TrainingViewController.xib */,
+			);
+			path = vc_training;
 			sourceTree = "<group>";
 		};
 		4F0096E3172E4701003A4570 /* data */ = {
@@ -917,6 +955,10 @@
 				2235669A172D5CB300139F57 /* admin_pres_backbuttonover_@2x.png in Resources */,
 				4F0096E2172E4063003A4570 /* item.plist in Resources */,
 				4F0096EB172E7F4F003A4570 /* ManagerCell.xib in Resources */,
+				22F70D8817314D60007C0F8C /* ReTestViewController.xib in Resources */,
+				22F70D8D17314E64007C0F8C /* test_retest.png in Resources */,
+				22F70DA017314FE6007C0F8C /* test_inji.png in Resources */,
+				22F70DA217314FE6007C0F8C /* TrainingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -946,6 +988,8 @@
 				4F0096E6172E4720003A4570 /* ItemManager.m in Sources */,
 				4F0096E9172E7EA9003A4570 /* ManagerCell.m in Sources */,
 				4F0096EE172E894B003A4570 /* ThreeRangeSlider.m in Sources */,
+				22F70D8717314D60007C0F8C /* ReTestViewController.m in Sources */,
+				22F70DA117314FE6007C0F8C /* TrainingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

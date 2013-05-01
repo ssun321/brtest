@@ -128,6 +128,15 @@
     [self.view addSubview:_viewMenu3];
 }
 
+#pragma mark - move page
+
+- (void)move:(NSString*)clsName{
+    Class cls = NSClassFromString(clsName);
+    UIViewController* vc = [[cls alloc] initWithNibName:clsName bundle:nil];
+    [self.navigationController pushViewController:vc animated:YES];
+    [vc release];
+}
+
 #pragma mark - 인지치료 서브메뉴
 
 - (IBAction)clickMenu00:(id)sender {
@@ -135,11 +144,13 @@
 }
 
 - (IBAction)clickMenu01:(id)sender {
-    [self test:sender];
+    // 훈련형 인지치료
+    [self move:@"TrainingViewController"];
 }
 
 - (IBAction)clickMenu02:(id)sender {
-    [self test:sender];
+    // 복습하기
+    [self move:@"ReTestViewController"];
 }
 
 - (IBAction)clickMenu0_close:(id)sender {
@@ -189,7 +200,7 @@
 #pragma mark - 설문/결과 서브메뉴
 
 - (IBAction)clickMenu30:(id)sender {
-    [self test:sender];
+    [self move:@"ResultViewController"];
 }
 
 - (IBAction)clickMenu31:(id)sender {
