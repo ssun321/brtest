@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ReTestViewController : UIViewController
+
+@property (retain, nonatomic) IBOutlet UIImageView *imageViewBG;
+@property (retain, nonatomic) IBOutlet UITableView *tableView;
+
 - (IBAction)clickBack:(id)sender;
 
 @end
