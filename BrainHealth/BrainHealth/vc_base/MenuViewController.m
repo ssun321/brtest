@@ -7,7 +7,7 @@
 //
 
 #import "MenuViewController.h"
-
+#import "BaseViewController.h"
 @interface MenuViewController ()
 
 @end
@@ -15,6 +15,13 @@
 @implementation MenuViewController
 
 - (void)test:(id)sender{
+#warning 컨텐츠 로드 샘플
+    NSString* clsName = @"Content016ViewController";
+    Class cls = NSClassFromString(clsName);
+    BaseViewController* vc = [[cls alloc] initWithNibName:clsName bundle:nil level:@"4"];
+    [self.navigationController pushViewController:vc animated:YES];
+    [vc makeQuestionWithDic:nil];
+    [vc release];
     
     UIButton* button = sender;
     
