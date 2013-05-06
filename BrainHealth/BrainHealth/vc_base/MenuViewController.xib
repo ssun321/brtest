@@ -41,7 +41,6 @@
 						<int key="NSvFlags">256</int>
 						<string key="NSFrame">{{320, 122}, {392, 70}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="538135674"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -57,7 +56,6 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{56, 315}, {250, 150}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="670638919"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
@@ -96,7 +94,6 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{277, 285}, {250, 150}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="927532143"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
@@ -122,7 +119,6 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{498, 315}, {250, 150}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="929942718"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
@@ -148,7 +144,6 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{718, 285}, {250, 150}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="257418890"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
@@ -174,7 +169,6 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{431, 530}, {139, 138}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="32542273"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
@@ -200,7 +194,6 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{910, 705}, {73, 20}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
-						<reference key="NSWindow"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -223,7 +216,6 @@
 				</array>
 				<string key="NSFrameSize">{1024, 748}</string>
 				<reference key="NSSuperview"/>
-				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="915214709"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
@@ -1249,176 +1241,7 @@
 			<nil key="sourceID"/>
 			<int key="maxID">114</int>
 		</object>
-		<object class="IBClassDescriber" key="IBDocument.Classes">
-			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
-				<object class="IBPartialClassDescription">
-					<string key="className">MenuViewController</string>
-					<string key="superclassName">UIViewController</string>
-					<dictionary class="NSMutableDictionary" key="actions">
-						<string key="clickMenu00:">id</string>
-						<string key="clickMenu01:">id</string>
-						<string key="clickMenu02:">id</string>
-						<string key="clickMenu0:">id</string>
-						<string key="clickMenu0_close:">id</string>
-						<string key="clickMenu10:">id</string>
-						<string key="clickMenu11:">id</string>
-						<string key="clickMenu12:">id</string>
-						<string key="clickMenu1:">id</string>
-						<string key="clickMenu1_close:">id</string>
-						<string key="clickMenu20:">id</string>
-						<string key="clickMenu21:">id</string>
-						<string key="clickMenu22:">id</string>
-						<string key="clickMenu23:">id</string>
-						<string key="clickMenu2:">id</string>
-						<string key="clickMenu2_close:">id</string>
-						<string key="clickMenu30:">id</string>
-						<string key="clickMenu31:">id</string>
-						<string key="clickMenu32:">id</string>
-						<string key="clickMenu33:">id</string>
-						<string key="clickMenu3:">id</string>
-						<string key="clickMenu3_close:">id</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="actionInfosByName">
-						<object class="IBActionInfo" key="clickMenu00:">
-							<string key="name">clickMenu00:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="clickMenu01:">
-							<string key="name">clickMenu01:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="clickMenu02:">
-							<string key="name">clickMenu02:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="clickMenu0:">
-							<string key="name">clickMenu0:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="clickMenu0_close:">
-							<string key="name">clickMenu0_close:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="clickMenu10:">
-							<string key="name">clickMenu10:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="clickMenu11:">
-							<string key="name">clickMenu11:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="clickMenu12:">
-							<string key="name">clickMenu12:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="clickMenu1:">
-							<string key="name">clickMenu1:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="clickMenu1_close:">
-							<string key="name">clickMenu1_close:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="clickMenu20:">
-							<string key="name">clickMenu20:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="clickMenu21:">
-							<string key="name">clickMenu21:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="clickMenu22:">
-							<string key="name">clickMenu22:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="clickMenu23:">
-							<string key="name">clickMenu23:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="clickMenu2:">
-							<string key="name">clickMenu2:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="clickMenu2_close:">
-							<string key="name">clickMenu2_close:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="clickMenu30:">
-							<string key="name">clickMenu30:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="clickMenu31:">
-							<string key="name">clickMenu31:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="clickMenu32:">
-							<string key="name">clickMenu32:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="clickMenu33:">
-							<string key="name">clickMenu33:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="clickMenu3:">
-							<string key="name">clickMenu3:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="clickMenu3_close:">
-							<string key="name">clickMenu3_close:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="outlets">
-						<string key="buttonMenu0">UIButton</string>
-						<string key="buttonMenu1">UIButton</string>
-						<string key="buttonMenu2">UIButton</string>
-						<string key="buttonMenu3">UIButton</string>
-						<string key="viewMenu0">UIView</string>
-						<string key="viewMenu1">UIView</string>
-						<string key="viewMenu2">UIView</string>
-						<string key="viewMenu3">UIView</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<object class="IBToOneOutletInfo" key="buttonMenu0">
-							<string key="name">buttonMenu0</string>
-							<string key="candidateClassName">UIButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="buttonMenu1">
-							<string key="name">buttonMenu1</string>
-							<string key="candidateClassName">UIButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="buttonMenu2">
-							<string key="name">buttonMenu2</string>
-							<string key="candidateClassName">UIButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="buttonMenu3">
-							<string key="name">buttonMenu3</string>
-							<string key="candidateClassName">UIButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="viewMenu0">
-							<string key="name">viewMenu0</string>
-							<string key="candidateClassName">UIView</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="viewMenu1">
-							<string key="name">viewMenu1</string>
-							<string key="candidateClassName">UIView</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="viewMenu2">
-							<string key="name">viewMenu2</string>
-							<string key="candidateClassName">UIView</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="viewMenu3">
-							<string key="name">viewMenu3</string>
-							<string key="candidateClassName">UIView</string>
-						</object>
-					</dictionary>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/MenuViewController.h</string>
-					</object>
-				</object>
-			</array>
-		</object>
+		<object class="IBClassDescriber" key="IBDocument.Classes"/>
 		<int key="IBDocument.localizationMode">0</int>
 		<string key="IBDocument.TargetRuntimeIdentifier">IBIPadFramework</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDependencies">

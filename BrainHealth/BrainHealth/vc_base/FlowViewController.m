@@ -9,6 +9,8 @@
 #import <QuartzCore/QuartzCore.h>
 #import "FlowViewController.h"
 
+#import "SubViewController.h"
+
 @interface FlowViewController ()
 
 @end
@@ -43,7 +45,7 @@
     [_arrayData addObject:@"125"];
     
     _index = 0;
-    [self open:[_arrayData objectAtIndex:_index]];
+    [self open:[_arrayData objectAtIndex:_index] animation:NO];
     
 }
 
@@ -53,29 +55,45 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)open:(NSString *)code{
+- (void)open:(NSString *)code animation:(BOOL)isAnimation{
     
+    if(self.controller){
+        [self.controller.view removeFromSuperview];
+        [self.controller release];
+        self.controller = nil;
+    }
     
+    SubViewController* vc = [[SubViewController alloc] initWithNibName:@"SubViewController" bundle:nil];
     
-    CATransition *animation = [CATransition animation];
-    [animation setDelegate:self];
-    [animation setType:kCATransitionPush];
-    [animation setSubtype:kCATransitionFromLeft];
-    [animation setDuration:0.3f];
-    [animation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
+    vc.delegate = self;
+    vc.label.text = code;
     
-    [[self.view layer] addAnimation:animation forKey:@"View Change Ani"];
+    self.controller = vc;
+    
+    [self.view addSubview:self.controller.view];
+    
+    if(isAnimation){
+        CATransition *animation = [CATransition animation];
+        [animation setDelegate:self];
+        [animation setType:kCATransitionPush];
+        [animation setSubtype:kCATransitionFromRight];
+        [animation setDuration:0.3f];
+        [animation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
+        
+        [[self.view layer] addAnimation:animation forKey:@"View Change Ani"];
+    }
     
 }
 
 - (void)next{
     
+    _index++;
+    
     if(_index >= _arrayData.count){
         [self finish];
     }else{
         NSString* code = [_arrayData objectAtIndex:_index];
-        [self open:code];
-        _index++;
+        [self open:code animation:YES];
     }
     
 }

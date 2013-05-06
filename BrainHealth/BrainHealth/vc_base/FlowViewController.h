@@ -14,7 +14,7 @@
 @property (nonatomic, retain) NSMutableArray* arrayData;
 @property (nonatomic, retain) UIViewController* controller;
 
-- (void)open:(NSString*)code;
+- (void)open:(NSString*)code animation:(BOOL)animation;
 - (void)next;
 
 @end

@@ -140,7 +140,7 @@
 #pragma mark - 인지치료 서브메뉴
 
 - (IBAction)clickMenu00:(id)sender {
-    [self test:sender];
+    [self move:@"FlowViewController"];
 }
 
 - (IBAction)clickMenu01:(id)sender {

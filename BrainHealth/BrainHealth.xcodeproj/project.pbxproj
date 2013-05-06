@@ -120,6 +120,8 @@
 		4F0096E9172E7EA9003A4570 /* ManagerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0096E8172E7EA9003A4570 /* ManagerCell.m */; };
 		4F0096EB172E7F4F003A4570 /* ManagerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F0096EA172E7F4E003A4570 /* ManagerCell.xib */; };
 		4F0096EE172E894B003A4570 /* ThreeRangeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0096ED172E894A003A4570 /* ThreeRangeSlider.m */; };
+		4F0B5FB71737BF7A00CD43B7 /* SubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0B5FB51737BF7A00CD43B7 /* SubViewController.m */; };
+		4F0B5FB81737BF7A00CD43B7 /* SubViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F0B5FB61737BF7A00CD43B7 /* SubViewController.xib */; };
 		4F21C8E717377882005DBE5F /* FlowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F21C8E517377882005DBE5F /* FlowViewController.m */; };
 		4F21C8E817377882005DBE5F /* FlowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F21C8E617377882005DBE5F /* FlowViewController.xib */; };
 		4F2D33F816DDEA9900EAF948 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F2D33F716DDEA9900EAF948 /* Default-Landscape@2x~ipad.png */; };
@@ -345,6 +347,9 @@
 		4F0096EA172E7F4E003A4570 /* ManagerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ManagerCell.xib; sourceTree = "<group>"; };
 		4F0096EC172E894A003A4570 /* ThreeRangeSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeRangeSlider.h; sourceTree = "<group>"; };
 		4F0096ED172E894A003A4570 /* ThreeRangeSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeRangeSlider.m; sourceTree = "<group>"; };
+		4F0B5FB41737BF7A00CD43B7 /* SubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubViewController.h; sourceTree = "<group>"; };
+		4F0B5FB51737BF7A00CD43B7 /* SubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubViewController.m; sourceTree = "<group>"; };
+		4F0B5FB61737BF7A00CD43B7 /* SubViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubViewController.xib; sourceTree = "<group>"; };
 		4F21C8E417377882005DBE5F /* FlowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowViewController.h; sourceTree = "<group>"; };
 		4F21C8E517377882005DBE5F /* FlowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowViewController.m; sourceTree = "<group>"; };
 		4F21C8E617377882005DBE5F /* FlowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlowViewController.xib; sourceTree = "<group>"; };
@@ -816,6 +821,9 @@
 				4F21C8E417377882005DBE5F /* FlowViewController.h */,
 				4F21C8E517377882005DBE5F /* FlowViewController.m */,
 				4F21C8E617377882005DBE5F /* FlowViewController.xib */,
+				4F0B5FB41737BF7A00CD43B7 /* SubViewController.h */,
+				4F0B5FB51737BF7A00CD43B7 /* SubViewController.m */,
+				4F0B5FB61737BF7A00CD43B7 /* SubViewController.xib */,
 			);
 			path = vc_base;
 			sourceTree = "<group>";
@@ -1109,6 +1117,7 @@
 				4F81124A1732135500547DEB /* menu_review_inbox01_@2x.png in Resources */,
 				4F81124F173214F700547DEB /* ReTestCell.xib in Resources */,
 				4F21C8E817377882005DBE5F /* FlowViewController.xib in Resources */,
+				4F0B5FB81737BF7A00CD43B7 /* SubViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1142,6 +1151,7 @@
 				22F70DA117314FE6007C0F8C /* TrainingViewController.m in Sources */,
 				4F81124D173214DA00547DEB /* ReTestCell.m in Sources */,
 				4F21C8E717377882005DBE5F /* FlowViewController.m in Sources */,
+				4F0B5FB71737BF7A00CD43B7 /* SubViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
