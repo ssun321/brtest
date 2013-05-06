@@ -9,7 +9,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import "FlowViewController.h"
 
-#import "SubViewController.h"
+#import "BaseViewController.h"
 
 @interface FlowViewController ()
 
@@ -32,17 +32,17 @@
     
     _arrayData = [[NSMutableArray alloc] initWithCapacity:10];
     
-    [_arrayData addObject:@"111"];
-    [_arrayData addObject:@"112"];
-    [_arrayData addObject:@"113"];
-    [_arrayData addObject:@"114"];
-    [_arrayData addObject:@"115"];
+    [_arrayData addObject:@"0161"];
+    [_arrayData addObject:@"0162"];
+    [_arrayData addObject:@"0163"];
+    [_arrayData addObject:@"0164"];
+    [_arrayData addObject:@"0165"];
     
-    [_arrayData addObject:@"121"];
-    [_arrayData addObject:@"122"];
-    [_arrayData addObject:@"123"];
-    [_arrayData addObject:@"124"];
-    [_arrayData addObject:@"125"];
+    [_arrayData addObject:@"0261"];
+    [_arrayData addObject:@"0262"];
+    [_arrayData addObject:@"0263"];
+    [_arrayData addObject:@"0264"];
+    [_arrayData addObject:@"0265"];
     
     _index = 0;
     [self open:[_arrayData objectAtIndex:_index] animation:NO];
@@ -63,10 +63,15 @@
         self.controller = nil;
     }
     
-    SubViewController* vc = [[SubViewController alloc] initWithNibName:@"SubViewController" bundle:nil];
+    NSString* num = [NSString stringWithFormat:@"%03d", [code intValue] / 10];
+    NSString* level = [NSString stringWithFormat:@"%d", [code intValue] % 10];
+    
+    NSString* clsName = [NSString stringWithFormat:@"Content%@ViewController", num];
+    Class cls = NSClassFromString(clsName);
+    
+    BaseViewController* vc = [[cls alloc] initWithNibName:clsName bundle:nil level:level];
     
     vc.delegate = self;
-    vc.label.text = code;
     
     self.controller = vc;
     

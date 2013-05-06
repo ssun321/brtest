@@ -255,6 +255,9 @@
 	[resultAnswerController release];
 	
 	NSLog(@"완전 종료!!! 다음문제 요청 들어가야함...");
+    
+    [self.delegate next];
+    
 };
 
 @end

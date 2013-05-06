@@ -37,6 +37,8 @@
 @property(nonatomic, retain)NSString *contentType;
 @property(nonatomic, retain)NSString *contentLevel;
 
+@property (nonatomic, retain) id delegate;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil level:(NSString *)strLevelOrNil;
 - (void)startTimer;
 - (void)stopTimer;
