@@ -84,7 +84,16 @@
 }
 
 - (IBAction)clickBack:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
+    
+    int count = self.navigationController.viewControllers.count;
+    
+    if(count >= 3){
+        UIViewController* toController = [self.navigationController.viewControllers objectAtIndex:count - 3];
+        [self.navigationController popToViewController:toController animated:YES];
+    }else{
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+
 }
 
 #pragma mark - UITableViewDataSource

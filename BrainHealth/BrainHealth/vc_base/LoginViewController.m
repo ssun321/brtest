@@ -33,7 +33,35 @@
     
     self.user_id = @"jay";
     self.user_pwd = @"1111";
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShowWithNotification:) name:UIKeyboardWillShowNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHideWithNotification:) name:UIKeyboardWillHideNotification object:nil];
 }
+
+- (void)keyboardWillShowWithNotification:(NSNotification*)notification {
+    [UIView beginAnimations:@"KEYBOARD_UP" context:NULL];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+    [UIView setAnimationDuration:0.3];
+    
+    CGRect frame = self.view.frame;
+    frame.origin.y = -200;
+    self.view.frame = frame;
+    
+    [UIView commitAnimations];
+}
+
+- (void)keyboardWillHideWithNotification:(NSNotification*)notification {
+    [UIView beginAnimations:@"KEYBOARD_DOWN" context:NULL];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+    [UIView setAnimationDuration:0.3];
+    
+    CGRect frame = self.view.frame;
+    frame.origin.y = 0;
+    self.view.frame = frame;
+    
+    [UIView commitAnimations];
+}
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -47,6 +75,7 @@
 }
 
 - (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
     [_textFieldID release];
     [_textFieldPwd release];
     [super dealloc];
@@ -60,39 +89,6 @@
 }
 
 #pragma mark - UITextFieldDelegate
-
-- (void)textFieldDidBeginEditing:(UITextField *)textField{
-    
-    [UIView beginAnimations:@"KEYBOARD_UP" context:NULL];
-    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
-    [UIView setAnimationDuration:0.3];
-    
-    CGRect frame = self.view.frame;
-    frame.origin.y = -200;
-    self.view.frame = frame;
-    
-    [UIView commitAnimations];
-    
-}
-
-- (void)textFieldDidEndEditing:(UITextField *)textField{
-    
-    UITextField* textFieldOther = (textField == self.textFieldID) ? self.textFieldPwd : self.textFieldID;
-    
-    
-    if(![textFieldOther isFirstResponder]){
-        [UIView beginAnimations:@"KEYBOARD_DOWN" context:NULL];
-        [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
-        [UIView setAnimationDuration:0.3];
-        
-        CGRect frame = self.view.frame;
-        frame.origin.y = 0;
-        self.view.frame = frame;
-        
-        [UIView commitAnimations];
-    }
-
-}
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
     

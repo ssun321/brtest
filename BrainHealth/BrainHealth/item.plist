@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>1</key>
+	<dict>
+		<key>NAME</key>
+		<string>지남력과 주의력</string>
+		<key>CODE</key>
+		<string>OA</string>
+		<key>ENG</key>
+		<string>Orientation &amp; Attention</string>
+		<key>ITEMS</key>
+		<array>
+			<string>맞는 그림 찾기</string>
+			<string>시각 주의력(공간지남력)</string>
+			<string>거쳐가기</string>
+			<string>숫자 짲짓기</string>
+			<string>글자주의력</string>
+			<string>오른손 왼손/오른발 왼발</string>
+			<string>포도송이</string>
+		</array>
+	</dict>
+	<key>2</key>
+	<dict>
+		<key>NAME</key>
+		<string>지각력</string>
+		<key>CODE</key>
+		<string>P</string>
+		<key>ENG</key>
+		<string>Perception</string>
+		<key>ITEMS</key>
+		<array>
+			<string>선따라가기</string>
+			<string>조각난 그림A</string>
+			<string>조각난 그림B</string>
+			<string>사물지각</string>
+			<string>시각적 지각</string>
+			<string>겹친그림</string>
+		</array>
+	</dict>
+	<key>3</key>
+	<dict>
+		<key>NAME</key>
+		<string>기억력</string>
+		<key>CODE</key>
+		<string>M</string>
+		<key>ENG</key>
+		<string>Memory</string>
+		<key>ITEMS</key>
+		<array>
+			<string>언어학습/소리들려주고 찾기</string>
+			<string>언어학습/이미지 보여주고 찾기</string>
+			<string>이야기 회상</string>
+			<string>사다리타기</string>
+			<string>이미지와 숫자 기억하기</string>
+			<string>음식배달하기</string>
+			<string>지도보고 찾아가기</string>
+		</array>
+	</dict>
+	<key>4</key>
+	<dict>
+		<key>NAME</key>
+		<string>개념형성 추리력</string>
+		<key>CODE</key>
+		<string>CR</string>
+		<key>ENG</key>
+		<string>Concept formation and Reasoning</string>
+		<key>ITEMS</key>
+		<array>
+			<string>도형빠진곳 찾기</string>
+			<string>분류와 공통점</string>
+			<string>그림완성하기</string>
+			<string>장면배열하기</string>
+			<string>사자성어</string>
+			<string>속담풀이</string>
+		</array>
+	</dict>
+	<key>5</key>
+	<dict>
+		<key>NAME</key>
+		<string>관리작업과 운동작업</string>
+		<key>CODE</key>
+		<string>EM</string>
+		<key>ENG</key>
+		<string>Executive fuction and Motor performance</string>
+		<key>ITEMS</key>
+		<array>
+			<string>억제</string>
+			<string>그림속 속담</string>
+			<string>미로찾기</string>
+			<string>선따라  그리기</string>
+			<string>가려진 그림과 단어</string>
+			<string>눈운동</string>
+		</array>
+	</dict>
+	<key>6</key>
+	<dict>
+		<key>NAME</key>
+		<string>구성능력</string>
+		<key>CODE</key>
+		<string>C</string>
+		<key>ENG</key>
+		<string>Construction</string>
+		<key>ITEMS</key>
+		<array>
+			<string>복잡한 그림</string>
+			<string>대칭그림</string>
+			<string>성냥 배열</string>
+			<string>평명도형</string>
+			<string>입체도형</string>
+		</array>
+	</dict>
+	<key>7</key>
+	<dict>
+		<key>NAME</key>
+		<string>언어와 언어 연관기능</string>
+		<key>CODE</key>
+		<string>VL</string>
+		<key>ENG</key>
+		<string>Verbal function and Lanaguage</string>
+		<key>ITEMS</key>
+		<array>
+			<string>계산</string>
+			<string>공통으로 들어갈 말 찾기</string>
+		</array>
+	</dict>
+	<key>8</key>
+	<dict>
+		<key>NAME</key>
+		<string>소리인지</string>
+		<key>CODE</key>
+		<string></string>
+		<key>ENG</key>
+		<string></string>
+		<key>ITEMS</key>
+		<array>
+			<string>듣고 찾기</string>
+			<string>보고 찾기</string>
+		</array>
+	</dict>
+	<key>9</key>
+	<dict>
+		<key>NAME</key>
+		<string>가눙성 게임 / 손운동</string>
+		<key>CODE</key>
+		<string></string>
+		<key>ENG</key>
+		<string></string>
+		<key>ITEMS</key>
+		<array>
+			<string>볼굴림판</string>
+			<string>콩고르기</string>
+			<string>바둑돌</string>
+			<string>박수</string>
+			<string>아날로그시계 시침, 분침 맞추기</string>
+		</array>
+	</dict>
+	<key>10</key>
+	<dict>
+		<key>NAME</key>
+		<string>그림치료</string>
+		<key>CODE</key>
+		<string></string>
+		<key>ENG</key>
+		<string></string>
+		<key>ITEMS</key>
+		<array>
+			<string>명화</string>
+			<string>정물</string>
+			<string>한자</string>
+		</array>
+	</dict>
+	<key>11</key>
+	<dict>
+		<key>NAME</key>
+		<string>인지 자극</string>
+		<key>CODE</key>
+		<string></string>
+		<key>ENG</key>
+		<string></string>
+		<key>ITEMS</key>
+		<array>
+			<string>카드기억하기</string>
+			<string>조리하기(조리방법 소개)</string>
+			<string>낱말카드</string>
+			<string>인지자극</string>
+			<string>회상</string>
+		</array>
+	</dict>
+</dict>
+</plist>

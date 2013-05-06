@@ -38,6 +38,32 @@
     self.viewBackground.hidden = YES;
     [self.view addSubview:self.viewBackground];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShowWithNotification:) name:UIKeyboardWillShowNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHideWithNotification:) name:UIKeyboardWillHideNotification object:nil];
+}
+
+- (void)keyboardWillShowWithNotification:(NSNotification*)notification {
+    [UIView beginAnimations:@"KEYBOARD_UP" context:NULL];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+    [UIView setAnimationDuration:0.3];
+    
+    CGRect frame = self.view.frame;
+    frame.origin.y = -200;
+    self.view.frame = frame;
+    
+    [UIView commitAnimations];
+}
+
+- (void)keyboardWillHideWithNotification:(NSNotification*)notification {
+    [UIView beginAnimations:@"KEYBOARD_DOWN" context:NULL];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+    [UIView setAnimationDuration:0.3];
+    
+    CGRect frame = self.view.frame;
+    frame.origin.y = 0;
+    self.view.frame = frame;
+    
+    [UIView commitAnimations];
 }
 
 - (void)didReceiveMemoryWarning
@@ -88,6 +114,8 @@
 }
 
 - (void)dealloc {
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
     
     [user release];
     [dicSearch release];
