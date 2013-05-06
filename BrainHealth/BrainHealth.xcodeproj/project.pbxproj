@@ -88,6 +88,20 @@
 		0014681B1737C49800760ACD /* tp_time_bg_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 001467CA1737C49800760ACD /* tp_time_bg_@2x.png */; };
 		0014681C1737C49800760ACD /* tp_word_stat_button01_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 001467CB1737C49800760ACD /* tp_word_stat_button01_@2x.png */; };
 		0014681D1737C49800760ACD /* tp_word_stat_button01_over_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 001467CC1737C49800760ACD /* tp_word_stat_button01_over_@2x.png */; };
+		0014683C1737C58200760ACD /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 001468211737C58200760ACD /* BaseViewController.m */; };
+		0014683D1737C58200760ACD /* ContentInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 001468251737C58200760ACD /* ContentInfo.m */; };
+		0014683E1737C58200760ACD /* ContentUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 001468271737C58200760ACD /* ContentUtil.m */; };
+		0014683F1737C58200760ACD /* ContentCaptionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0014682A1737C58200760ACD /* ContentCaptionController.m */; };
+		001468401737C58200760ACD /* ContentCaptionController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0014682B1737C58200760ACD /* ContentCaptionController.xib */; };
+		001468411737C58200760ACD /* ContentResultAnswerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0014682D1737C58200760ACD /* ContentResultAnswerController.m */; };
+		001468421737C58200760ACD /* ContentResultAnswerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0014682E1737C58200760ACD /* ContentResultAnswerController.xib */; };
+		001468431737C58200760ACD /* ContentTimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 001468301737C58200760ACD /* ContentTimerController.m */; };
+		001468441737C58200760ACD /* ContentTimerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 001468311737C58200760ACD /* ContentTimerController.xib */; };
+		001468451737C58200760ACD /* Content016ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 001468341737C58200760ACD /* Content016ViewController.m */; };
+		001468461737C58200760ACD /* Content016ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 001468351737C58200760ACD /* Content016ViewController.xib */; };
+		001468471737C58200760ACD /* Content026ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 001468381737C58200760ACD /* Content026ViewController.m */; };
+		001468481737C58200760ACD /* Content026ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 001468391737C58200760ACD /* Content026ViewController.xib */; };
+		001468491737C58200760ACD /* PairComposition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0014683B1737C58200760ACD /* PairComposition.m */; };
 		22112450172D324200830C2B /* result_graph_before_button_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22112433172D324200830C2B /* result_graph_before_button_@2x.png */; };
 		22112451172D324200830C2B /* result_graph_beforeover_button_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22112434172D324200830C2B /* result_graph_beforeover_button_@2x.png */; };
 		22112452172D324200830C2B /* result_graph_contents_01_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22112435172D324200830C2B /* result_graph_contents_01_@2x.png */; };
@@ -354,6 +368,30 @@
 		001467CA1737C49800760ACD /* tp_time_bg_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tp_time_bg_@2x.png"; sourceTree = "<group>"; };
 		001467CB1737C49800760ACD /* tp_word_stat_button01_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tp_word_stat_button01_@2x.png"; sourceTree = "<group>"; };
 		001467CC1737C49800760ACD /* tp_word_stat_button01_over_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tp_word_stat_button01_over_@2x.png"; sourceTree = "<group>"; };
+		001468201737C58200760ACD /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		001468211737C58200760ACD /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		001468231737C58200760ACD /* ContentCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentCommon.h; sourceTree = "<group>"; };
+		001468241737C58200760ACD /* ContentInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentInfo.h; sourceTree = "<group>"; };
+		001468251737C58200760ACD /* ContentInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentInfo.m; sourceTree = "<group>"; };
+		001468261737C58200760ACD /* ContentUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentUtil.h; sourceTree = "<group>"; };
+		001468271737C58200760ACD /* ContentUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentUtil.m; sourceTree = "<group>"; };
+		001468291737C58200760ACD /* ContentCaptionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentCaptionController.h; sourceTree = "<group>"; };
+		0014682A1737C58200760ACD /* ContentCaptionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentCaptionController.m; sourceTree = "<group>"; };
+		0014682B1737C58200760ACD /* ContentCaptionController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentCaptionController.xib; sourceTree = "<group>"; };
+		0014682C1737C58200760ACD /* ContentResultAnswerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentResultAnswerController.h; sourceTree = "<group>"; };
+		0014682D1737C58200760ACD /* ContentResultAnswerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentResultAnswerController.m; sourceTree = "<group>"; };
+		0014682E1737C58200760ACD /* ContentResultAnswerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentResultAnswerController.xib; sourceTree = "<group>"; };
+		0014682F1737C58200760ACD /* ContentTimerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentTimerController.h; sourceTree = "<group>"; };
+		001468301737C58200760ACD /* ContentTimerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentTimerController.m; sourceTree = "<group>"; };
+		001468311737C58200760ACD /* ContentTimerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentTimerController.xib; sourceTree = "<group>"; };
+		001468331737C58200760ACD /* Content016ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Content016ViewController.h; sourceTree = "<group>"; };
+		001468341737C58200760ACD /* Content016ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Content016ViewController.m; sourceTree = "<group>"; };
+		001468351737C58200760ACD /* Content016ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Content016ViewController.xib; sourceTree = "<group>"; };
+		001468371737C58200760ACD /* Content026ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Content026ViewController.h; sourceTree = "<group>"; };
+		001468381737C58200760ACD /* Content026ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Content026ViewController.m; sourceTree = "<group>"; };
+		001468391737C58200760ACD /* Content026ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Content026ViewController.xib; sourceTree = "<group>"; };
+		0014683A1737C58200760ACD /* PairComposition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PairComposition.h; sourceTree = "<group>"; };
+		0014683B1737C58200760ACD /* PairComposition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PairComposition.m; sourceTree = "<group>"; };
 		22112433172D324200830C2B /* result_graph_before_button_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "result_graph_before_button_@2x.png"; sourceTree = "<group>"; };
 		22112434172D324200830C2B /* result_graph_beforeover_button_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "result_graph_beforeover_button_@2x.png"; sourceTree = "<group>"; };
 		22112435172D324200830C2B /* result_graph_contents_01_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "result_graph_contents_01_@2x.png"; sourceTree = "<group>"; };
@@ -692,6 +730,69 @@
 			path = contentFrames;
 			sourceTree = "<group>";
 		};
+		0014681F1737C58200760ACD /* vc_contents */ = {
+			isa = PBXGroup;
+			children = (
+				001468201737C58200760ACD /* BaseViewController.h */,
+				001468211737C58200760ACD /* BaseViewController.m */,
+				001468221737C58200760ACD /* Common */,
+				001468281737C58200760ACD /* Component */,
+				001468321737C58200760ACD /* Content_016 */,
+				001468361737C58200760ACD /* Content_026 */,
+			);
+			path = vc_contents;
+			sourceTree = "<group>";
+		};
+		001468221737C58200760ACD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				001468231737C58200760ACD /* ContentCommon.h */,
+				001468241737C58200760ACD /* ContentInfo.h */,
+				001468251737C58200760ACD /* ContentInfo.m */,
+				001468261737C58200760ACD /* ContentUtil.h */,
+				001468271737C58200760ACD /* ContentUtil.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		001468281737C58200760ACD /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				001468291737C58200760ACD /* ContentCaptionController.h */,
+				0014682A1737C58200760ACD /* ContentCaptionController.m */,
+				0014682B1737C58200760ACD /* ContentCaptionController.xib */,
+				0014682C1737C58200760ACD /* ContentResultAnswerController.h */,
+				0014682D1737C58200760ACD /* ContentResultAnswerController.m */,
+				0014682E1737C58200760ACD /* ContentResultAnswerController.xib */,
+				0014682F1737C58200760ACD /* ContentTimerController.h */,
+				001468301737C58200760ACD /* ContentTimerController.m */,
+				001468311737C58200760ACD /* ContentTimerController.xib */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		001468321737C58200760ACD /* Content_016 */ = {
+			isa = PBXGroup;
+			children = (
+				001468331737C58200760ACD /* Content016ViewController.h */,
+				001468341737C58200760ACD /* Content016ViewController.m */,
+				001468351737C58200760ACD /* Content016ViewController.xib */,
+			);
+			path = Content_016;
+			sourceTree = "<group>";
+		};
+		001468361737C58200760ACD /* Content_026 */ = {
+			isa = PBXGroup;
+			children = (
+				001468371737C58200760ACD /* Content026ViewController.h */,
+				001468381737C58200760ACD /* Content026ViewController.m */,
+				001468391737C58200760ACD /* Content026ViewController.xib */,
+				0014683A1737C58200760ACD /* PairComposition.h */,
+				0014683B1737C58200760ACD /* PairComposition.m */,
+			);
+			path = Content_026;
+			sourceTree = "<group>";
+		};
 		22112430172D324200830C2B /* result */ = {
 			isa = PBXGroup;
 			children = (
@@ -858,6 +959,7 @@
 				22C41DD516D4B2FA00B4D937 /* RootViewController.xib */,
 				4F8F88B1172A3595008FABC7 /* vc_base */,
 				4F8F88BB172A3595008FABC7 /* vc_manager */,
+				0014681F1737C58200760ACD /* vc_contents */,
 				4F8F88C5172A3595008FABC7 /* vc_result */,
 				4F8F88C6172A3595008FABC7 /* vc_usercenter */,
 				22C41DC116D4B2F900B4D937 /* Supporting Files */,
@@ -1306,6 +1408,11 @@
 				0014681B1737C49800760ACD /* tp_time_bg_@2x.png in Resources */,
 				0014681C1737C49800760ACD /* tp_word_stat_button01_@2x.png in Resources */,
 				0014681D1737C49800760ACD /* tp_word_stat_button01_over_@2x.png in Resources */,
+				001468401737C58200760ACD /* ContentCaptionController.xib in Resources */,
+				001468421737C58200760ACD /* ContentResultAnswerController.xib in Resources */,
+				001468441737C58200760ACD /* ContentTimerController.xib in Resources */,
+				001468461737C58200760ACD /* Content016ViewController.xib in Resources */,
+				001468481737C58200760ACD /* Content026ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1332,6 +1439,15 @@
 				4F8F8925172A3C74008FABC7 /* ResultViewController.m in Sources */,
 				4F8F892B172A47A4008FABC7 /* GraphView.m in Sources */,
 				223565F7172D55B000139F57 /* GraphCell.m in Sources */,
+				0014683C1737C58200760ACD /* BaseViewController.m in Sources */,
+				0014683D1737C58200760ACD /* ContentInfo.m in Sources */,
+				0014683E1737C58200760ACD /* ContentUtil.m in Sources */,
+				0014683F1737C58200760ACD /* ContentCaptionController.m in Sources */,
+				001468411737C58200760ACD /* ContentResultAnswerController.m in Sources */,
+				001468431737C58200760ACD /* ContentTimerController.m in Sources */,
+				001468451737C58200760ACD /* Content016ViewController.m in Sources */,
+				001468471737C58200760ACD /* Content026ViewController.m in Sources */,
+				001468491737C58200760ACD /* PairComposition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
