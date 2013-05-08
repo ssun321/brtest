@@ -157,7 +157,7 @@
             
             for ( NSNumber* index in arRandomIndex ) {
                 tempView = [arImageView objectAtIndex:[index intValue]];
-                
+                posY = tempView.bounds.origin.y;
                 if ( [self.composition isRandomYesOrNo] ) {
                     posY += [[arCoordinateIndex objectAtIndex:[index intValue]] intValue];
                 } else {
