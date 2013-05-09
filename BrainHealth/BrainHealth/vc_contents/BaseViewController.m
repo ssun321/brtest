@@ -174,21 +174,21 @@
 
 - (void)dealloc{
 	
-	[_contentsView release];
-	[_baseTopView release];
-	[_baseBottomView release];
-	[_baseSubjectLabel release];
-	[_baseCountLabel release];
-	[_baseMenuButton release];
-	[_baseSettingButton release];
-	
-	[_contentSeq release];
-	[_contentType release];
-	[_contentLevel release];
-	
-	[_timerController.view removeFromSuperview];
-	[_timerController setDelegate:nil];
-	[_timerController release];
+//	[_contentsView release];
+//	[_baseTopView release];
+//	[_baseBottomView release];
+//	[_baseSubjectLabel release];
+//	[_baseCountLabel release];
+//	[_baseMenuButton release];
+//	[_baseSettingButton release];
+//	
+//	[_contentSeq release];
+//	[_contentType release];
+//	[_contentLevel release];
+//	
+//	[_timerController.view removeFromSuperview];
+//	[_timerController setDelegate:nil];
+//	[_timerController release];
 	
 	[super dealloc];
 }
@@ -227,6 +227,7 @@
 	//init
 	[resultController setDelegate:self];
 	[resultController reloadResultAnswer:isRight];
+
 };
 
 

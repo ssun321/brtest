@@ -76,6 +76,7 @@
     self.controller = vc;
     
     [self.view addSubview:self.controller.view];
+    [vc makeQuestionWithDic:nil];
     
     if(isAnimation){
         CATransition *animation = [CATransition animation];
