@@ -32,6 +32,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+	
+	
 }
 
 - (void)didReceiveMemoryWarning
@@ -43,6 +45,8 @@
 - (void)dealloc{
 	[_backgroundImageView release];
 	[_barImageView release];
+	[_maskImageView release];
+	[_OnlyTextBackGroundImagView release];
 	[_timeLabel release];
 	
 	[super dealloc];
@@ -52,11 +56,11 @@
 	//update label
 	_timeLabel.text = [NSString stringWithFormat:@"%d", _currentTime];
 	
-	//update img (width 300px)
-	int width = 300 * _currentTime/_limitTime;
-	[_barImageView setFrame:CGRectMake(_barImageView.frame.origin.x,
+	//update img
+	int width = _barImageView.frame.size.width * _currentTime/_limitTime;
+	[_barImageView setFrame:CGRectMake(401.0f - (_barImageView.frame.size.width - width),
 									   _barImageView.frame.origin.y,
-									   width,
+									   _barImageView.frame.size.width,
 									   _barImageView.frame.size.height)];
 	
 	//시간종료
@@ -89,15 +93,21 @@
 	//update UI
 	switch (_timerViewType) {
 		case TimerViewTypeDefault:
-			_barImageView.hidden = FALSE;
-			_timeLabel.frame = CGRectMake(29.0f, 0.0f,
+			_backgroundImageView.hidden			= FALSE;
+			_barImageView.hidden				= FALSE;
+			_maskImageView.hidden				= FALSE;
+			_OnlyTextBackGroundImagView.hidden	= TRUE;
+			_timeLabel.frame = CGRectMake(335.0f, 9.0f,
 										  _timeLabel.frame.size.width,
 										  _timeLabel.frame.size.height);
 			break;
 			
 		case TimerViewTypeOnlyText:
-			_barImageView.hidden = TRUE;
-			_timeLabel.frame = CGRectMake(180.0f, 0.0f,
+			_backgroundImageView.hidden			= TRUE;
+			_barImageView.hidden				= TRUE;
+			_maskImageView.hidden				= TRUE;
+			_OnlyTextBackGroundImagView.hidden	= FALSE;
+			_timeLabel.frame = CGRectMake(485.0f, 8.0f,
 										  _timeLabel.frame.size.width,
 										  _timeLabel.frame.size.height);
 			break;

@@ -112,4 +112,12 @@
     [vc release];
 }
 
+- (void)goToMainMenu{
+	NSString* clsName = @"MenuViewController";
+	Class cls = NSClassFromString(clsName);
+	UIViewController* vc = [[cls alloc] initWithNibName:clsName bundle:nil];
+	[self.navigationController pushViewController:vc animated:YES];
+	[vc release];
+};
+
 @end

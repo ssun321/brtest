@@ -15,6 +15,6 @@
 @property (nonatomic, retain) UIViewController* controller;
 
 - (void)open:(NSString*)code animation:(BOOL)animation;
-- (void)next;
+
 
 @end

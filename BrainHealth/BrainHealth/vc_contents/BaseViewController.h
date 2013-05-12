@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @class ContentTimerController;
+@protocol FlowViewControllerDelegate;
 
-@interface BaseViewController : UIViewController{
+@interface BaseViewController : UIViewController <UIAlertViewDelegate>{
 	
 	NSString *_contentSeq;		//문제 고유번호 (_contentType + _contentLevel)
 	NSString *_contentType;		//문제 유형
@@ -31,13 +32,15 @@
 	UIView		*_baseBottomView;
 	UILabel		*_baseSubjectLabel;		//컨텐츠 제목
 	UILabel		*_baseCountLabel;		//컨텐츠 진행도(index/count)
+	
+	id <FlowViewControllerDelegate> _delegate;
 }
 
 @property(nonatomic, retain)NSString *contentSeq;
 @property(nonatomic, retain)NSString *contentType;
 @property(nonatomic, retain)NSString *contentLevel;
 
-@property (nonatomic, retain) id delegate;
+@property(nonatomic, assign)id /*<FlowViewControllerDelegate> 약한참조*/ delegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil level:(NSString *)strLevelOrNil;
 - (void)startTimer;
@@ -52,4 +55,14 @@
 //실행자('시작' 버튼 누르면 요청됨)
 - (void)execute;
 
+@end
+
+
+
+
+
+#pragma mark - FlowViewControllerDelegate
+@protocol FlowViewControllerDelegate <NSObject>
+- (void)next;
+- (void)goToMainMenu;
 @end

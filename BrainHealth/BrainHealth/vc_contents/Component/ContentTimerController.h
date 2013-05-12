@@ -25,6 +25,8 @@ typedef enum TimerViewType TimerViewType;
 	
 	IBOutlet UIImageView *_backgroundImageView;
 	IBOutlet UIImageView *_barImageView;
+	IBOutlet UIImageView *_maskImageView;
+	IBOutlet UIImageView *_OnlyTextBackGroundImagView;
 	IBOutlet UILabel *_timeLabel;
 }
 

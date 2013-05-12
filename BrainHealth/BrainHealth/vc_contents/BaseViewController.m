@@ -12,6 +12,7 @@
 #import "ContentCaptionController.h"
 #import "ContentTimerController.h"
 #import "ContentResultAnswerController.h"
+#import "ContentSettingController.h"
 
 @interface BaseViewController ()
 
@@ -22,6 +23,7 @@
 @synthesize contentSeq = _contentSeq;
 @synthesize contentType = _contentType;
 @synthesize contentLevel = _contentLevel;
+@synthesize delegate = _delegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil level:(NSString *)strLevelOrNil
 {
@@ -49,7 +51,7 @@
 	
 	//self.view
 	[self.view setBackgroundColor:[UIColor whiteColor]];
-	[self.view setFrame:CGRectMake(0.0f, 0.0f, 1024.0f, 768.0f -20.0f)];
+	[self.view setFrame:CGRectMake(0.0f, 0.0f, 1024.0f, 768.0f)];
 	
 	//baseView
 	_contentsView = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 67.0f, self.view.frame.size.width, self.view.frame.size.height -67.0f -25.0f)]; //h_656
@@ -61,12 +63,8 @@
 	[self.view addSubview:_baseTopView];
 	[_baseTopView release];
 	
-	//topViews -bg_image
-	UIImage *topBackgroundImage = [UIImage imageNamed:@"tp_menu_bg_.png"];
-	UIImageView *topBackgroundImageView = [[UIImageView alloc] initWithImage:topBackgroundImage];
-	[topBackgroundImageView setFrame:_baseTopView.bounds];
-	[_baseTopView addSubview:topBackgroundImageView];
-	[topBackgroundImageView release];
+	//topViews -bg_image & timer
+	[self loadTimerController];
 	
 	//topViews -logo_image
 	UIImage *logoImage = [UIImage imageNamed:@"tp_menu_t_.png"];
@@ -82,6 +80,7 @@
 	[_baseSettingButton setImage:settingButtonNormalImage forState:UIControlStateNormal];
 	[_baseSettingButton setImage:settingButtonOverImage forState:UIControlStateHighlighted];
 	[_baseSettingButton setFrame:CGRectMake(_baseTopView.frame.size.width -10.0f -settingButtonNormalImage.size.width, 13.0f, settingButtonNormalImage.size.width, settingButtonNormalImage.size.height)];
+	[_baseSettingButton addTarget:self action:@selector(touchUpInsideWithSetting:) forControlEvents:UIControlEventTouchUpInside];
 	[_baseTopView addSubview:_baseSettingButton];
 	
 	//topViews -menu_button
@@ -91,6 +90,7 @@
 	[_baseMenuButton setImage:menuButtonNormalImage forState:UIControlStateNormal];
 	[_baseMenuButton setImage:menuButtonOverImage forState:UIControlStateHighlighted];
 	[_baseMenuButton setFrame:CGRectMake(_baseSettingButton.frame.origin.x -3.0f -menuButtonNormalImage.size.width, _baseSettingButton.frame.origin.y, menuButtonNormalImage.size.width, menuButtonNormalImage.size.height)];
+	[_baseMenuButton addTarget:self action:@selector(touchUpInsideWithMainMenu:) forControlEvents:UIControlEventTouchUpInside];
 	[_baseTopView addSubview:_baseMenuButton];
 	
 	//bottomViews
@@ -147,12 +147,12 @@
 	
 	//addsubview
 	[_baseTopView addSubview:_timerController.view];
-	[_timerController.view setFrame:CGRectMake(290.0f, 8.0f, 418.0f, 50.0f)];
+	[_timerController.view setFrame:CGRectMake(0.0f, 0.0f, 302.0f+500.0f, 80.0f)];
 	
 	//init
 	[_timerController setDelegate:self];
 	[_timerController setLimitTime:[BHContentInfo limitTimeWithSeq:self.contentSeq]];
-	[_timerController reloadTimerViewType:TimerViewTypeDefault]; //설정에서 얻어야함
+	[_timerController reloadTimerViewType:BHContentInfo.setting_timer?TimerViewTypeDefault:TimerViewTypeOnlyText];
 }
 
 - (void)viewDidLoad
@@ -163,7 +163,6 @@
 	[self loadUIFrame];
 	[self loadContentInfo];			//상단 하단 컨텐츠 정보 얻기
 	[self loadCaptionController];	//지문팝업 요청
-	[self loadTimerController];		//타이머 로드
 }
 
 - (void)didReceiveMemoryWarning
@@ -193,6 +192,7 @@
 	[super dealloc];
 }
 
+#pragma mark - overwrite methods
 
 //생성자(savedDic : 기존에 저장된 문제 설정값들, 공통 화면 생성 후 요청됨)
 - (void)makeQuestionWithDic:(NSDictionary *)savedDic{/*required overwrite*/};
@@ -202,6 +202,7 @@
 
 
 
+#pragma mark - call methods
 
 - (void)startTimer{
 	[_timerController startTimerController];
@@ -231,6 +232,79 @@
 };
 
 
+#pragma mark - Button Actions
+
+- (void)touchUpInsideWithMainMenu:(UIButton *)sender{
+	
+	NSString *msg = @"메인 메뉴로 이동 하시겠습니까? \n풀이하신 문제는 자동 저장되며 \n다음 다시 시작시 현재 풀이부터 \n시작 됩니다.";
+	
+	UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"" message:msg delegate:self cancelButtonTitle:@"확인" otherButtonTitles:@"취소", nil];
+	[alert setTag:850321];
+    [alert show];
+    [alert release];
+	
+	//멈춰라 타이머
+	[self stopTimer];
+}
+
+- (void)touchUpInsideWithSetting:(UIButton *)sender{
+	
+	//create
+	ContentSettingController *settingController = [[ContentSettingController alloc] initWithNibName:@"ContentSettingController" bundle:nil];
+	
+	//init
+	[settingController setDelegate:self];
+	
+	//addsubview
+	[self.view addSubview:settingController.view];
+	
+	//멈춰라 타이머
+	[self stopTimer];
+}
+
+
+
+#pragma mark - UIAlertViewDelegate
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+	
+	if (alertView.tag == 850321) {		
+		if (buttonIndex == 0) {
+			if (_delegate && [_delegate respondsToSelector:@selector(goToMainMenu)]) {
+				[_delegate goToMainMenu];
+			}
+		}
+		else{
+			//문제 계속, 타이머 계속.
+			[self startTimer];
+		}
+	}
+}
+
+#pragma mark - ContentSettingControllerDelegate
+- (void)didCancelWithContentSettingController:(ContentSettingController *)settingController{
+	
+	//제거
+	[settingController.view removeFromSuperview];
+	[settingController setDelegate:nil];
+	[settingController release];
+	
+	//다시 돌아라 타이머
+	[self startTimer];
+};
+
+- (void)didConfirmWithContentSettingController:(ContentSettingController *)settingController{
+	
+	//설정에 변화가 있으므로 영향주는 것들 콜 해준다...
+	[_timerController reloadTimerViewType:BHContentInfo.setting_timer?TimerViewTypeDefault:TimerViewTypeOnlyText];
+	
+	
+	//제거
+	[self didCancelWithContentSettingController:settingController];
+};
+
+
+
+
 #pragma mark - ContentCaptionControllerDelegate
 - (void)didStartContentWithContentCaptionController:(ContentCaptionController *)captionController{
 	
@@ -256,9 +330,9 @@
 	[resultAnswerController release];
 	
 	NSLog(@"완전 종료!!! 다음문제 요청 들어가야함...");
-    
-    [self.delegate next];
-    
+    if (_delegate && [_delegate respondsToSelector:@selector(next)]) {
+		[_delegate next];
+	}
 };
 
 @end
