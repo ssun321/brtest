@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 enum TimerViewType{
     TimerViewTypeDefault = 0,	// bar img
@@ -16,12 +17,13 @@ typedef enum TimerViewType TimerViewType;
 
 @protocol ContentTimerControllerDelegate;
 
-@interface ContentTimerController : UIViewController{
+@interface ContentTimerController : UIViewController<AVAudioPlayerDelegate>{
 	
 	int _limitTime;
 	int _currentTime;
 	TimerViewType _timerViewType;
 	id <ContentTimerControllerDelegate> _delegate;
+	AVAudioPlayer* _playerSound;
 	
 	IBOutlet UIImageView *_backgroundImageView;
 	IBOutlet UIImageView *_barImageView;
@@ -29,10 +31,10 @@ typedef enum TimerViewType TimerViewType;
 	IBOutlet UIImageView *_OnlyTextBackGroundImagView;
 	IBOutlet UILabel *_timeLabel;
 }
-
 @property(nonatomic, assign)id /*<ContentTimerControllerDelegate> 약한참조*/ delegate;
 @property(nonatomic, assign)int limitTime;
 @property(nonatomic, assign)int currentTime;
+@property(nonatomic, retain) AVAudioPlayer* playerSound;
 
 - (void)reloadTimerViewType:(TimerViewType)timerViewType;
 - (void)startTimerController;

@@ -7,17 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 @protocol ContentResultAnswerControllerDelegate;
 
-@interface ContentResultAnswerController : UIViewController{
+@interface ContentResultAnswerController : UIViewController<AVAudioPlayerDelegate>{
 	
 	id <ContentResultAnswerControllerDelegate> _delegate;
+	AVAudioPlayer* _playerSound;
 	
 	IBOutlet UIImageView *_resultImageView;
 }
 
 @property(nonatomic, assign)id /*<ContentResultAnswerController> 약한참조*/ delegate;
+@property(nonatomic, retain) AVAudioPlayer* playerSound;
 
 - (void)reloadResultAnswer:(BOOL)isRight;
 - (IBAction)touchUpInsideWith:(id)sender;

@@ -16,6 +16,7 @@
 	NSString *_contentSeq;		//문제 고유번호 (_contentType + _contentLevel)
 	NSString *_contentType;		//문제 유형
 	NSString *_contentLevel;	//문제 난이도
+	NSString *_contentDiversion;//문제 변환식 (왼손, 오른손 문제처럼 특정 문제들은 같은 유형-난이도 속에서도 분기를 탄다)
 	
 	//타이머
 	ContentTimerController	*_timerController;
@@ -39,6 +40,7 @@
 @property(nonatomic, retain)NSString *contentSeq;
 @property(nonatomic, retain)NSString *contentType;
 @property(nonatomic, retain)NSString *contentLevel;
+@property(nonatomic, retain)NSString *contentDiversion;
 
 @property(nonatomic, assign)id /*<FlowViewControllerDelegate> 약한참조*/ delegate;
 

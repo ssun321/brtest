@@ -23,6 +23,7 @@
 @synthesize contentSeq = _contentSeq;
 @synthesize contentType = _contentType;
 @synthesize contentLevel = _contentLevel;
+@synthesize contentDiversion = _contentDiversion;
 @synthesize delegate = _delegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil level:(NSString *)strLevelOrNil
@@ -41,7 +42,13 @@
 			if (self.contentLevel != nil) {
 				seq = [NSString stringWithFormat:@"%@%@", self.contentType, self.contentLevel];
 			}
+			//문제 seq
 			[self setContentSeq:seq];
+			
+			//문제 변환타입
+			[self setContentDiversion:[BHContentInfo diversionWithSeq:seq]];
+			
+			NSLog(@"Content Seq : S[%@] = T[%@] + L[%@], D[%@]", self.contentSeq, self.contentType, self.contentLevel, self.contentDiversion);
 		}
     }
     return self;
@@ -138,7 +145,7 @@
 	
 	//init
 	[captionController setDelegate:self];
-	[captionController makeContentCaptionWith:self.contentSeq];
+	[captionController makeContentCaptionWith:self.contentSeq contentDiversion:self.contentDiversion];
 }
 
 - (void)loadTimerController{

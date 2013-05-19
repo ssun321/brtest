@@ -8,6 +8,7 @@
 
 #import "ContentTimerController.h"
 
+#import "ContentCommon.h"
 
 @interface ContentTimerController ()
 
@@ -18,6 +19,7 @@
 @synthesize delegate = _delegate;
 @synthesize limitTime = _limitTime;
 @synthesize currentTime = _currentTime;
+@synthesize playerSound = _playerSound;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -49,6 +51,14 @@
 	[_OnlyTextBackGroundImagView release];
 	[_timeLabel release];
 	
+	if (_playerSound) {
+		_playerSound.delegate = nil;
+		if(_playerSound.playing){
+			[_playerSound stop];
+		}
+		[self setPlayerSound:nil];
+	}
+	
 	[super dealloc];
 }
 
@@ -62,6 +72,24 @@
 									   _barImageView.frame.origin.y,
 									   _barImageView.frame.size.width,
 									   _barImageView.frame.size.height)];
+	
+	//시간재촉
+	if (_currentTime == 5) {
+		
+		//효과음이 있는가 없는가
+		if (BHContentInfo.setting_sound) {
+			
+			NSString *file = @"endtimer";
+			NSString *path = [[NSBundle mainBundle] pathForResource:file ofType:@"aif"];;
+			NSURL *url = [NSURL fileURLWithPath:path];;
+			
+			AVAudioPlayer *av = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:NULL];
+			av.delegate = self;
+			[self setPlayerSound:av];
+			[av release];
+			[av play];
+		}
+	}
 	
 	//시간종료
 	if (_currentTime == 0) {
@@ -123,7 +151,23 @@
 
 - (void)stopTimerController{
 	[NSObject cancelPreviousPerformRequestsWithTarget:self];
+	
+	if (_playerSound) {
+		_playerSound.delegate = nil;
+		if(_playerSound.playing){
+			[_playerSound stop];
+		}
+		[self setPlayerSound:nil];
+	}
 };
 
+#pragma mark - AVAudioPlayerDelegate
+- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag{
+	
+	if (flag) {
+		player.delegate = nil;
+		[self setPlayerSound:nil];
+	}
+}
 
 @end
